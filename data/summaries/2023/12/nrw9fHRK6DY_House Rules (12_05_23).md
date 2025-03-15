@@ -1,0 +1,8 @@
+Title: House Rules (12/05/23)
+URL: https://www.youtube.com/watch?v=nrw9fHRK6DY
+Upload Date: 2023-12-06
+Video ID: nrw9fHRK6DY
+
+The New Hampshire House of Representatives Rules Committee convened to discuss a proposed bill aimed at addressing gaps in the state’s firearm regulations, particularly concerning individuals involuntarily committed for mental health issues. Representative Roy introduced the legislation, emphasizing the need to ensure that such individuals are barred from purchasing firearms, as required by federal law, but noting that New Hampshire currently lacks a mechanism to report this information to the National Instant Criminal Background Check System (NICS). Representative Muse, a co-sponsor, highlighted that over 40 states already report mental health data to NICS and stressed the importance of preventing firearms from ending up in the hands of individuals with severe mental health conditions, such as psychosis, while also ensuring their rights can be restored if they recover.
+
+The discussion underscored the complexity of balancing public safety with avoiding stigmatization of mental health conditions and ensuring due process. Concerns were raised about discouraging individuals, particularly veterans with PTSD, from seeking treatment for fear of losing their firearm rights. The legislation aims to include a restoration of rights process, requiring federal approval to ensure its effectiveness. Representatives expressed bipartisan support for the bill, with Senate co-sponsors already identified. The committee unanimously approved the late drafting of the legislation, and the meeting concluded with a motion to adjourn.

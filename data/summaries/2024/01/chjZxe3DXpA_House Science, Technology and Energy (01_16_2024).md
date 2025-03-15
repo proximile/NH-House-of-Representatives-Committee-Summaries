@@ -1,0 +1,24 @@
+Title: House Science, Technology and Energy (01/16/2024)
+URL: https://www.youtube.com/watch?v=chjZxe3DXpA
+Upload Date: 2024-01-16
+Video ID: chjZxe3DXpA
+
+The New Hampshire House of Representatives' Science, Technology, and Energy Committee meeting on January 16, 2024, covered a wide range of topics, focusing on energy efficiency, first responder communication infrastructure, geoengineering, and legislative scheduling. Here’s a comprehensive summary of the discussions:
+
+### Energy Efficiency and Cost-Benefit Analysis
+The primary focus was on **House Bill 1036**, which seeks to provide the Public Utilities Commission (PUC) with greater flexibility in assessing the cost-effectiveness of energy efficiency programs. Representative Michael Harrington introduced the bill, arguing that it removes outdated statutory restrictions, allowing the PUC to adapt to current economic conditions and incorporate updated metrics like discount rates. Alex Spidel from the PUC and representatives from the Department of Energy supported the bill, emphasizing the need for flexibility due to outdated economic assumptions. However, Consumer Advocate Don Kreis opposed the bill, defending the Granite State Test (GST) as a well-developed tool resulting from a rigorous stakeholder process. The discussion highlighted the tension between maintaining consistency in energy efficiency programs and the need for flexibility to adapt to new data and changing conditions.
+
+### First Responder Communication Infrastructure
+The committee also discussed **House Bill 1078**, which aims to facilitate the collocation of first responder radio equipment on existing wireless towers. Representative Mark Proulx highlighted the challenges faced by towns with limited options for antenna placement, emphasizing the need for better communication infrastructure. The Department of Safety expressed concerns about the bill, particularly regarding engineering challenges, cost issues, and the potential impact on interoperability and priority access for state or county agencies. Representatives raised questions about the legality of mandating private tower owners to provide space for government use and the practicality of implementing the bill as written.
+
+### Geoengineering and Weather Modification
+The committee delved into **House Bill 1700**, which seeks to prohibit intentional weather modification and electromagnetic pollution. Representative Gard introduced the bill, citing concerns about geoengineering activities like stratospheric aerosol injections and cloud seeding, which he argued could harm human health, the environment, and the economy. The discussion included historical references to geoengineering activities and the lack of public notification as required by a previous law. Questions were raised about enforcement, scientific evidence, and the state’s jurisdiction over federally regulated activities. The Department of Environmental Services (DES) stated it lacks the expertise and resources to monitor or enforce such activities, leading to calls for further investigation and a study commission.
+
+### Legislative Scheduling and Prioritization
+The committee also focused on scheduling and prioritizing bills for upcoming sessions. They discussed filling the calendar with bills, executive sessions, and work sessions for January 29-30, with an emphasis on expediting submissions to avoid a backlog. Representative Thomas suggested scheduling extra time for HB 1700 to accommodate testimony, including from out-of-state participants. The committee also considered renaming itself to potentially improve its position on the house calendar, though this would require a rule change.
+
+### Additional Bills and Discussions
+The committee briefly discussed **House Bill 1627**, a housekeeping bill that transfers statutes related to railroad activities from Title 34 (Public Utilities) to Title 20 (Transportation) or the Department of Safety, which received unanimous support. They also touched on **House Bill 1617**, which addresses energy procurement agreements and risk premiums in electricity contracts. After extensive debate, the committee voted unanimously to refer the bill to interim study for further analysis.
+
+### Conclusion
+Overall, the meeting highlighted significant concerns about energy efficiency assessments, first responder communication infrastructure, and the potential risks of geoengineering. The committee emphasized the need for flexibility, transparency, and further investigation into these complex issues. Decisions were made to further study some issues, pass non-controversial housekeeping legislation, and prioritize bills for upcoming sessions to ensure efficient legislative progress.

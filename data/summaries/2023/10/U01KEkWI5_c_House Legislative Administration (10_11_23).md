@@ -1,0 +1,8 @@
+Title: House Legislative Administration (10/11/23)
+URL: https://www.youtube.com/watch?v=U01KEkWI5_c
+Upload Date: 2023-10-12
+Video ID: U01KEkWI5_c
+
+The New Hampshire House of Representatives Legislative Administration meeting on October 11, 2023, began with introductions, the Pledge of Allegiance, and housekeeping announcements, including welcoming a new member, Representative Sers, and acknowledging Representative Allison Turkot (formerly Alan Turkot). The committee addressed four bills on the agenda but focused on **Senate Bill 28**, which pertains to the portrait and likeness of Rogers Johnson, the first African-American in the New Hampshire House. The bill had already been included in the budget passed in May, rendering further legislative action unnecessary. The committee voted **11-0** to recommend "ITL" (Inexpedient to Legislate) for SB 28, effectively closing it.
+
+The other three bills—**Senate Bill 301**, **Senate Bill 84**, and **House Bill 157**—were deferred due to unresolved amendments, ongoing committee work, and pending subcommittee recommendations. The chair apologized for the limited productivity but emphasized the need for preparation and coordination before addressing the remaining bills. Members were asked to share their availability for future meetings to ensure full participation. The meeting concluded with thanks to substitutes and congratulations to the newest committee member, followed by adjournment.

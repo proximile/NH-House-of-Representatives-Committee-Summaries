@@ -3,42 +3,52 @@ URL: https://www.youtube.com/watch?v=7cNuOfO78kk
 Upload Date: 2022-03-19
 Video ID: 7cNuOfO78kk
 
-**Comprehensive Summary of the NH House of Representatives Fiscal Committee Meeting on March 18, 2022**
+**Comprehensive Summary of the NH House of Representatives Fiscal Committee Meeting (March 18, 2022)**
 
-The New Hampshire House of Representatives Fiscal Committee convened on March 18, 2022, to address a wide range of fiscal matters, including the allocation of federal and state funds, audit recommendations, staffing challenges, and program effectiveness. The meeting highlighted ongoing efforts to manage resources transparently and address critical needs across various state departments. Below is a cohesive summary of the key discussions and decisions:
+The New Hampshire House of Representatives Fiscal Committee convened on March 18, 2022, to address a wide range of budgetary, administrative, and regulatory matters. The meeting emphasized careful financial oversight, precise language in funding requests, and long-term planning for state resources. Key discussions and decisions included:
 
-### **Approval of Minutes and Audit Recommendations**
-- The committee approved the minutes from the February 18, 2022, meeting without corrections.
-- An audit recommendation for the Weatherization Assistance Program was discussed and approved, focusing on improving efficiency and effectiveness.
+### **Budgetary and Administrative Approvals**
+1. **Canvas Software Purchase**: The committee approved the purchase of Canvas software for $120 annually, which will be used by the department to develop graphics for social media and public information dissemination, particularly for traveler health information.
 
-### **Federal and State Funding Allocations**
-1. **Food and Nutrition Programs**: The committee discussed the allocation of federal funds to support food and nutrition programs in schools, addressing increased costs due to supply chain issues. Schools were given the option to opt-in for reimbursement based on meal counts.
-2. **CARES Act Funding**: The committee reviewed the allocation of CARES Act funds, clarifying that some funds remain available for use until September 2022.
-3. **ARPA Funding**: Concerns were raised about the slow pace of spending the remaining $497 million in ARPA funds, which must be allocated by December 31, 2026. Projects include water and sewer infrastructure, mental health, COVID-19 response, and economic development. The committee emphasized the need for accountability and timely project implementation.
+2. **Warehouse Space for Medical Supplies**: The committee discussed the state's need for warehouse space to store medical supplies, including ventilators and PPE, in response to COVID-19. Questions were raised about the long-term viability of renting space versus renovating state-owned buildings. The committee approved the funding for the rented warehouse space.
 
-### **Staffing and Operational Challenges**
-1. **Temporary Positions**: The committee discussed hiring temporary positions to address staffing shortages in various state departments. Challenges in filling positions and managing office space for new hires were highlighted.
-2. **COVID-19 Reporting Burden**: Concerns were raised about the excessive workload on schools due to COVID-19 reporting requirements. The Commissioner of Education noted that reporting requirements have been reduced.
-3. **Judicial Council Funding**: The committee approved $2.3 million for the Judicial Council to address salary increases for public defenders, with the understanding that funding might need revisiting based on ongoing union negotiations.
+3. **Veterans Camp Project**: A $23 million project for a veterans camp in Franklin, NH, in partnership with Easter Seals, was approved. Concerns about the competitive bidding process and the state's oversight of the project were addressed.
 
-### **Program Approvals and Discussions**
-1. **Canvas Software Purchase**: The committee approved the purchase of Canvas software for $120 annually to facilitate quick graphics creation for social media and public information dissemination.
-2. **Warehouse Space for Medical Supplies**: A request for $3.9 million to lease warehouse space for storing medical supplies, including PPE and ventilators, was approved. Questions were raised about the long-term need for the space.
-3. **Veterans Camp Project**: The committee approved $23 million for a veterans camp project in Franklin, NH, in partnership with Easter Seals. Concerns were raised about the lack of a competitive bid process and state oversight.
-4. **Housing and Workforce Development**: The committee approved hiring three positions to work on workforce housing initiatives, with questions raised about the focus on middle-income housing.
-5. **STD Monitoring Program**: A program to enhance STD monitoring and remediation was approved, with flexibility to address both STD investigations and COVID-19 variants.
-6. **Winter Maintenance Funding**: The committee approved a transfer of funds for winter maintenance without objections.
+4. **Housing and Workforce Development**: The committee approved the hiring of three positions to work with existing housing agencies to address workforce housing needs, particularly for middle-income households, using ARPA funds.
 
-### **Lead Testing and Prevention in Schools**
-- Delays in implementing lead testing and mitigation programs in schools due to the COVID-19 pandemic were discussed. Efforts have resumed, with contractors hired to outreach to schools and develop a database for transparency.
-- Legislative initiatives like Senate Bill 452 and House Bill 1421 aim to lower lead standards and create a regulatory framework for compliance. Concerns were raised about potential workload and enforcement challenges.
+5. **Public Defender Funding**: The Judicial Council’s request for $2.3 million to address salary increases for public defenders was approved, though concerns were raised about the ongoing nature of these expenses.
 
-### **Audit Findings**
-1. **New Hampshire Lottery Commission**: Addressed internal control deficiencies, particularly in sports betting revenue monitoring, and committed to implementing recommendations.
-2. **Liquor Commission**: Reported progress in resolving past audit observations, with only one significant deficiency remaining. The committee emphasized the need for better documentation and oversight in financial adjustments.
+6. **Miscellaneous Hiring**: The committee approved the hiring of a financial auditor for the Legislative Budget Assistant's office.
 
-### **Next Steps**
-- The committee scheduled its next meeting for April 15, 2022, and reiterated the importance of timely ARPA fund allocation, project implementation, and improved financial oversight.
+### **Federal and State Funding Discussions**
+1. **Infrastructure and COVID-19 Response**: The committee emphasized the importance of precise language in funding requests related to infection prevention and COVID-19 response, particularly concerning the use of the term "infrastructure."
 
-### **Overall Themes**
-Throughout the meeting, committee members emphasized transparency, accountability, and the need to address staffing shortages and resource allocation challenges. The discussions reflected a focus on ensuring that federal and state funds are used effectively to support critical programs and infrastructure while maintaining compliance with audit recommendations and regulatory standards.
+2. **Federal CARES Act Funding**: A request for $254,000 in federal CARES Act funding to support survey and certification activities, particularly in nursing homes, was approved.
+
+3. **Use of ARPA Funds**: The committee reviewed the use of ARPA funds for hiring temporary positions and other projects, stressing the importance of compliance with federal reporting requirements and the need to allocate and spend funds by the 2026 deadline.
+
+### **Staffing Challenges and Data Processing**
+1. **Hiring Temporary Positions**: Commissioner Arlinghaus provided an update on the hiring of temporary positions to address staffing shortages, highlighting the challenges in filling positions and the impact on state operations.
+
+2. **Part-Time Positions and Vacancy Rates**: The committee discussed the high vacancy rates for part-time positions and the challenges in tracking and filling these roles.
+
+3. **Streamlining Data Processing**: The committee emphasized the need for continued development of streamlined approaches for processing data related to travelers' health to improve efficiency and reporting accuracy.
+
+### **Public Health and Environmental Compliance**
+1. **Lead Testing in Schools**: The Department of Education presented a report on lead testing in school drinking water, with concerns raised about the 7% of schools not reporting results. Ongoing efforts to improve compliance and remediation were discussed.
+
+2. **EPA Grants and COVID-19 Impact**: The delay in implementing EPA grants due to the COVID-19 pandemic was highlighted. Efforts have resumed to hire staff and contractors to ensure schools comply with statutory requirements for water sampling and mitigation.
+
+3. **Legislative Initiatives**: The committee discussed Senate Bill 452 and House Bill 1421, which aim to create a more comprehensive regulatory process for schools to comply with water safety standards. House Bill 1421, in particular, would enforce compliance and impose fines for non-compliance.
+
+4. **Water Testing and Compliance**: The committee emphasized the need for transparency and public access to water testing data in schools and childcare facilities, as well as the potential for streamlining the process by focusing on points where people actually drink water.
+
+### **Audits and Financial Oversight**
+1. **Audit Topic Recommendation**: The committee approved an audit recommendation from Senator Reagan regarding the efficiency and effectiveness of the Weatherization Assistance Program.
+
+2. **Lottery and Liquor Commission Audits**: The committee reviewed management letters from audits of the New Hampshire Lottery and the Liquor Commission. The Lottery audit identified a material weakness in sports betting revenue monitoring, while the Liquor Commission audit noted a significant deficiency in adjusting system accounting records. Both entities concurred with the findings and are implementing corrective actions.
+
+### **Future Meetings**
+The committee scheduled its next meeting for April 15, 2022.
+
+Overall, the meeting focused on ensuring compliance with regulatory requirements, efficient use of federal and state funds, addressing staffing challenges, and improving public health and environmental safety through targeted initiatives and oversight.

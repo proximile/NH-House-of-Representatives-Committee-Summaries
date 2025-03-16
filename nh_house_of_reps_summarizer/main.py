@@ -8,10 +8,11 @@ import os
 import time
 import logging
 from datetime import datetime
-from .video_downloader import VideoDownloader
-from .database import DatabaseManager
-from .summarizer import TranscriptSummarizer, AsyncTranscriptSummarizer, summarize_batch_async, MAX_PARALLEL_WORKERS
-from .utils import is_transcript_format_supported, clean_filename, format_date
+# Import the entire utils module instead of individual functions
+import utils
+from video_downloader import VideoDownloader
+from database import DatabaseManager
+from summarizer import TranscriptSummarizer, AsyncTranscriptSummarizer, summarize_batch_async, MAX_PARALLEL_WORKERS
 
 logger = logging.getLogger(__name__)
 
@@ -121,7 +122,7 @@ class NHVideoProcessor:
         """
         logger.info(f"Downloading transcripts for videos (limit={limit}, format={format_type})")
         
-        if not is_transcript_format_supported(f"dummy.{format_type}"):
+        if not utils.is_transcript_format_supported(f"dummy.{format_type}"):
             logger.error(f"Unsupported transcript format: {format_type}")
             return 0
         
@@ -191,7 +192,7 @@ class NHVideoProcessor:
             logger.error(f"Error downloading transcripts: {e}")
             return count
 
-    def process_videos(self, limit=5, delay=2, organize_by_date=True, filename_template="{id}_{title}.txt", 
+    def process_videos(self, limit=5, delay=2, organize_by_date=True, filename_template="{id}_{title}.md", 
                        overwrite=False, async_mode=False):
         """
         Process unprocessed videos, generate summaries, and immediately save to text files.
@@ -212,9 +213,6 @@ class NHVideoProcessor:
         import os
         
         logger.info(f"Processing videos for summarization (limit={limit}, parallel_workers={self.max_parallel_workers})")
-        
-        # Import at the function level to ensure it's available
-        from .utils import chunk_text
         
         # Get videos without summaries
         logger.info("Checking for videos without summaries...")
@@ -256,7 +254,7 @@ class NHVideoProcessor:
                 continue
                 
             # Verify the transcript format is supported
-            if not is_transcript_format_supported(video['transcript_path']):
+            if not utils.is_transcript_format_supported(video['transcript_path']):
                 logger.warning(f"Unsupported transcript format for video: {video['id']}")
                 continue
                 
@@ -271,7 +269,7 @@ class NHVideoProcessor:
             logger.info("Using async processing mode")
             return self._process_videos_async(valid_videos, delay, organize_by_date, filename_template, overwrite)
         
-        # Process one video at a time to simplify debugging
+        # Process one video at a time
         count = 0
         for video in valid_videos:
             try:
@@ -308,25 +306,14 @@ class NHVideoProcessor:
                             chunk_info={'number': 1, 'total': 1}
                         )
                     else:
-                        # Multi-chunk case - with careful chunking and processing
+                        # Multi-chunk case - using the proper chunking function from utils.py
                         logger.info(f"Transcript for {video_id} is long ({len(transcript_text)} chars), splitting into chunks")
                         
-                        # Use safe chunking with more logging
                         try:
-                            logger.info("Starting chunking process...")
-                            chunks = []
-                            # A simpler chunking approach for debugging
-                            remaining_text = transcript_text
-                            chunk_num = 0
-                            
-                            while remaining_text:
-                                chunk_size = min(len(remaining_text), self.summarizer.chunk_size)
-                                chunks.append(remaining_text[:chunk_size])
-                                remaining_text = remaining_text[chunk_size:]
-                                chunk_num += 1
-                                logger.info(f"Created chunk {chunk_num} with {chunk_size} characters")
-                            
-                            logger.info(f"Successfully split into {len(chunks)} chunks")
+                            # Use chunk_text from utils.py with overlap to ensure context is preserved between chunks
+                            overlap = 100  # Characters of overlap between chunks to maintain context
+                            chunks = utils.chunk_text(transcript_text, self.summarizer.chunk_size, overlap)
+                            logger.info(f"Successfully split into {len(chunks)} chunks using natural language boundaries")
                         except Exception as e:
                             logger.error(f"Error during chunking for {video_id}: {str(e)}")
                             continue
@@ -339,11 +326,11 @@ class NHVideoProcessor:
                         with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
                             # Submit all chunks to the executor
                             future_to_chunk = {}
-                            for i, chunk_text in enumerate(chunks):
-                                logger.info(f"Submitting chunk {i+1}/{len(chunks)} for processing")
+                            for i, chunked_text in enumerate(chunks):
+                                logger.info(f"Submitting chunk {i+1}/{len(chunks)} for processing (length: {len(chunked_text)} chars)")
                                 future = executor.submit(
                                     self.summarizer._summarize_chunk, 
-                                    chunk_text,
+                                    chunked_text,
                                     0,  # retry_count
                                     3,  # max_retries
                                     video.get('title', ''),
@@ -414,7 +401,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
                             with open(summary_path, 'w', encoding='utf-8') as f:
                                 f.write(f"Title: {video['title']}\n")
                                 f.write(f"URL: {video['url']}\n")
-                                f.write(f"Upload Date: {format_date(video['upload_date'])}\n")
+                                f.write(f"Upload Date: {utils.format_date(video['upload_date'])}\n")
                                 f.write(f"Video ID: {video['id']}\n\n")
                                 f.write(summary)
                                 
@@ -437,7 +424,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
         logger.info(f"Finished processing videos: {count} videos summarized")
         return count
         
-    def _get_summary_path(self, video, organize_by_date=True, filename_template="{id}_{title}.txt"):
+    def _get_summary_path(self, video, organize_by_date=True, filename_template="{id}_{title}.md"):
         """
         Determine the file path for a summary based on video metadata.
         
@@ -456,14 +443,14 @@ Create a cohesive, comprehensive summary that combines all these segments."""
             filename = filename.replace("{id}", video.get('id', 'unknown'))
             
         if "{title}" in filename:
-            title = clean_filename(video.get('title', 'Unknown Title'))
+            title = utils.clean_filename(video.get('title', 'Unknown Title'))
             # Truncate title if too long (max 100 chars)
             if len(title) > 100:
                 title = title[:97] + "..."
             filename = filename.replace("{title}", title)
             
         if "{date}" in filename and video.get('upload_date'):
-            date = format_date(video['upload_date'])
+            date = utils.format_date(video['upload_date'])
             filename = filename.replace("{date}", date)
         
         # Determine directory path
@@ -481,7 +468,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
         return os.path.join(self.output_dir, filename)
 
     def run_pipeline(self, fetch_limit=50, process_limit=10, delay=2, transcript_format='vtt', 
-                     organize_by_date=True, filename_template="{id}_{title}.txt", overwrite=False,
+                     organize_by_date=True, filename_template="{id}_{title}.md", overwrite=False,
                      async_mode=False, max_parallel_workers=None):
         """
         Run the full pipeline: fetch videos, download transcripts, and generate summaries with file output.
@@ -584,184 +571,192 @@ Create a cohesive, comprehensive summary that combines all these segments."""
             
         return None
     
-    def _process_videos_threaded(self, videos, delay=2, organize_by_date=True, filename_template="{id}_{title}.txt", 
-                            overwrite=False):
+    def _process_videos_threaded(self, videos, delay=2, organize_by_date=True, filename_template="{id}_{title}.md", 
+                                overwrite=False):
         """
         Process videos using thread-based parallelism with a flat structure.
-        
+
         Args:
             videos (list): List of video dictionaries with valid transcripts
             delay (int): Delay between API calls in seconds
             organize_by_date (bool): Whether to organize summary files by date
             filename_template (str): Template for filenames
             overwrite (bool): Whether to overwrite existing summary files
-            
+
         Returns:
             int: Number of videos processed
         """
+        import concurrent.futures
+        import time
+        import os
+        import logging
+
+        logger = logging.getLogger(__name__)
+        
         # Step 1: Read and chunk all transcripts first
         all_chunks = []  # Will hold (video_id, chunk_text, chunk_index, total_chunks)
         video_chunks = {}  # Maps video_id to a list of chunks
-        
+
         for video in videos:
             try:
                 # Read and clean the transcript
                 transcript_path = video['transcript_path']
                 transcript_text = self.summarizer._clean_transcript(transcript_path)
-                
+
                 if not transcript_text:
                     logger.warning(f"No text extracted from transcript: {transcript_path}")
                     continue
-                    
-                # Determine if we need to chunk the transcript
+
+                # Use the chunk_text() function for consistent chunking with natural boundaries
                 if len(transcript_text) <= self.summarizer.chunk_size:
                     # Single chunk case
                     chunks = [transcript_text]
                 else:
-                    # Multi-chunk case
-                    logger.info(f"Transcript for {video['id']} is long ({len(transcript_text)} chars), splitting into chunks")
-                    chunks = chunk_text(transcript_text, self.summarizer.chunk_size)
-                    
+                    logger.info(
+                        f"Transcript for {video['id']} is long ({len(transcript_text)} chars), "
+                        "splitting into chunks using utils.chunk_text()"
+                    )
+                    # Use chunk_text with overlap to ensure context is preserved between chunks
+                    overlap = 100  # Characters of overlap between chunks
+                    chunks = utils.chunk_text(transcript_text, self.summarizer.chunk_size, overlap)
+                    logger.info(f"Successfully split into {len(chunks)} chunks using natural language boundaries")
+
                 # Store chunks for this video
                 video_chunks[video['id']] = chunks
-                
+
                 # Add all chunks to our flat list with their metadata
                 for i, chunk in enumerate(chunks):
                     all_chunks.append((video['id'], chunk, i, len(chunks)))
-                    
+
                 logger.info(f"Prepared {len(chunks)} chunks for video {video['id']}")
-                    
+
             except Exception as e:
                 logger.error(f"Error preparing chunks for video {video['id']}: {e}")
-        
+
         if not all_chunks:
             logger.warning("No chunks prepared for processing")
             return 0
-            
+
         # Step 2: Process all chunks with a single thread pool
         chunk_results = {}  # Will hold {video_id: [chunk1_summary, chunk2_summary, ...]}
-        
+
         # Calculate maximum concurrent API requests (enforcing a reasonable limit)
         actual_workers = min(self.max_parallel_workers, 5)  # Cap at 5 concurrent requests
         logger.info(f"Processing {len(all_chunks)} total chunks with {actual_workers} concurrent workers")
-        
+
         with concurrent.futures.ThreadPoolExecutor(max_workers=actual_workers) as executor:
             # Submit all chunks to the executor
             future_to_chunk = {}
-            for video_id, chunk_text, chunk_idx, total_chunks in all_chunks:
+            for video_id, chunk_text_data, chunk_idx, total_chunks in all_chunks:
                 # Get the video object for metadata
                 video = next((v for v in videos if v['id'] == video_id), None)
-                
+
                 future = executor.submit(
-                    self.summarizer._summarize_chunk, 
-                    chunk_text, 
-                    0,  # retry_count 
+                    self.summarizer._summarize_chunk,
+                    chunk_text_data, 
+                    0,  # retry_count
                     3,  # max_retries
                     video.get('title', ''),
                     video.get('description', ''),
-                    {'number': chunk_idx+1, 'total': total_chunks}
+                    {'number': chunk_idx + 1, 'total': total_chunks}
                 )
                 future_to_chunk[future] = (video_id, chunk_idx, total_chunks)
-                # Small delay between submissions to avoid overwhelming the API
-                time.sleep(delay * 0.2)  # Reduced delay for submissions
-            
+                # Small delay between submissions
+                time.sleep(delay * 0.2)
+
             # Process results as they complete
             for future in concurrent.futures.as_completed(future_to_chunk):
                 video_id, chunk_idx, total_chunks = future_to_chunk[future]
                 try:
                     chunk_summary = future.result()
-                    
                     # Initialize list for this video if needed
                     if video_id not in chunk_results:
                         chunk_results[video_id] = [None] * total_chunks
-                        
+
                     # Store the chunk summary
                     chunk_results[video_id][chunk_idx] = chunk_summary
                     logger.info(f"Completed chunk {chunk_idx+1}/{total_chunks} for video {video_id}")
-                    
+
                 except Exception as e:
                     logger.error(f"Error processing chunk {chunk_idx+1}/{total_chunks} for video {video_id}: {e}")
-                    
+
                 # Small delay after each completion
                 time.sleep(delay * 0.1)
-        
+
         # Step 3: For each video, create a full summary by combining its chunks
         count = 0
         for video_id, summaries in chunk_results.items():
             try:
                 # Filter out None results
                 valid_summaries = [s for s in summaries if s]
-                
+
                 if not valid_summaries:
                     logger.warning(f"No valid summaries generated for video {video_id}")
                     continue
-                    
+
                 final_summary = None
-                
+
                 # Get the video data for metadata
                 video = next((v for v in videos if v['id'] == video_id), None)
                 if not video:
                     video = self.db.get_video_with_summary(video_id) or {'id': video_id}
-                
+
                 # If only one chunk, use it directly
                 if len(valid_summaries) == 1:
                     final_summary = valid_summaries[0]
                 else:
-                    # Create a meta-summary from all chunks
+                    # Generate meta-summary
                     logger.info(f"Creating meta-summary from {len(valid_summaries)} chunks for video {video_id}")
-                    
                     meta_prompt = f"""The following are summaries of different segments from a NH House of Representatives meeting titled "{video.get('title', '')}":
-{video.get('description', '') and f"\nDescription: {video.get('description', '')}\n" or ""}
+    {video.get('description', '') and f"\nDescription: {video.get('description', '')}\n" or ""}
 
-{"\n".join([f"Segment {i+1}/{len(valid_summaries)}: {summary}" for i, summary in enumerate(valid_summaries)])}
+    {"\n".join([f"Segment {i+1}/{len(valid_summaries)}: {summary}" for i, summary in enumerate(valid_summaries)])}
 
-Create a cohesive, comprehensive summary that combines all these segments."""
+    Create a cohesive, comprehensive summary that combines all these segments."""
 
-                    # Add delay before meta-summary API call
+                    # Delay before meta-summary
                     time.sleep(delay)
-                    
                     try:
                         response = self.summarizer.client.chat.completions.create(
-                            model=self.summarizer.model_name, 
-                            messages=[{"role": "user", "content": meta_prompt}], 
-                            max_tokens=self.summarizer.max_tokens, 
-                            temperature=0.7, 
+                            model=self.summarizer.model_name,
+                            messages=[{"role": "user", "content": meta_prompt}],
+                            max_tokens=self.summarizer.max_tokens,
+                            temperature=0.7,
                             top_p=0.95,
-                            timeout=120  # 2-minute timeout for meta-summary
+                            timeout=120  # 2-minute timeout
                         )
-                        
                         final_summary = response.choices[0].message.content
-                        
+
                     except Exception as e:
                         logger.error(f"Error creating meta-summary for video {video_id}: {e}")
                         # Fall back to joining the individual summaries
                         final_summary = "## Combined Summary of Meeting Segments\n\n" + "\n\n".join(valid_summaries)
-                
+
                 # Save the summary to the database
                 if final_summary:
                     # Immediately write the summary to a text file
                     try:
                         summary_path = self._get_summary_path(video, organize_by_date, filename_template)
-                        
+
                         # Create directory if it doesn't exist
                         os.makedirs(os.path.dirname(summary_path), exist_ok=True)
-                        
+
                         with open(summary_path, 'w', encoding='utf-8') as f:
                             f.write(f"Title: {video.get('title', 'Unknown Title')}\n")
                             f.write(f"URL: {video.get('url', 'https://www.youtube.com/watch?v=' + video_id)}\n")
                             f.write(f"Upload Date: {format_date(video.get('upload_date', ''))}\n")
                             f.write(f"Video ID: {video_id}\n\n")
                             f.write(final_summary)
-                        
+
                         logger.info(f"Saved summary to file: {summary_path}")
-                        
+
                         # Save to database with summary path
                         if self.db.save_summary(video_id, final_summary, summary_path):
                             count += 1
                             logger.info(f"Generated and saved summary for video: {video_id}")
                         else:
                             logger.warning(f"Failed to save summary to database for video: {video_id}")
-                            
+
                     except Exception as e:
                         logger.error(f"Error writing summary file for {video_id}: {str(e)}")
                         # Try to save to database without the file path
@@ -772,14 +767,29 @@ Create a cohesive, comprehensive summary that combines all these segments."""
                             logger.warning(f"Failed to save summary for video: {video_id}")
                 else:
                     logger.warning(f"No valid summary generated for video: {video_id}")
-                    
+
             except Exception as e:
                 logger.error(f"Error finalizing summary for video {video_id}: {e}")
-        
+
         return count
+
 
     # Helper method to write summary files (used by both sync and async methods)
     def _write_summary_file(self, file_path, title, url, upload_date, video_id, summary):
+        """
+        Write a summary to a file with consistent formatting.
+        
+        Args:
+            file_path (str): Path to write the file to
+            title (str): Video title
+            url (str): Video URL
+            upload_date (str): Upload date string
+            video_id (str): Video ID
+            summary (str): Summary text
+            
+        Returns:
+            bool: True if successful
+        """
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(f"Title: {title}\n")
             f.write(f"URL: {url}\n")
@@ -788,7 +798,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
             f.write(summary)
         return True
         
-    def _process_videos_async(self, videos, delay=2, organize_by_date=True, filename_template="{id}_{title}.txt", 
+    def _process_videos_async(self, videos, delay=2, organize_by_date=True, filename_template="{id}_{title}.md", 
                             overwrite=False):
         """
         Process videos using asyncio-based parallelism with a flat structure.
@@ -806,11 +816,10 @@ Create a cohesive, comprehensive summary that combines all these segments."""
         # We need to run this async function from our sync context
         import asyncio
         import concurrent.futures
-        from .utils import chunk_text
         
         async def process_all_videos():
             # Step 1: Read and chunk all transcripts first
-            all_chunks = []  # Will hold (video_id, chunk_text, chunk_index, total_chunks)
+            all_chunks = []  # Will hold (video_id, chunk_text, chunk_index, total_chunks, video)
             
             for video in videos:
                 try:
@@ -831,10 +840,13 @@ Create a cohesive, comprehensive summary that combines all these segments."""
                     else:
                         # Multi-chunk case
                         logger.info(f"Transcript for {video['id']} is long ({len(transcript_text)} chars), splitting into chunks")
-                        # Run chunking in executor to avoid blocking
+                        
+                        # Use overlap to ensure context is preserved between chunks
+                        overlap = 100  # Characters of overlap between chunks
                         with concurrent.futures.ThreadPoolExecutor() as executor:
                             chunks = await asyncio.get_event_loop().run_in_executor(
-                                executor, chunk_text, transcript_text, self.summarizer.chunk_size)
+                                executor, utils.chunk_text, transcript_text, self.summarizer.chunk_size, overlap)
+                        logger.info(f"Successfully split into {len(chunks)} chunks using natural language boundaries")
                         
                     # Add all chunks to our flat list with their metadata
                     for i, chunk in enumerate(chunks):
@@ -857,7 +869,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
             semaphore = asyncio.Semaphore(actual_workers)
             logger.info(f"Processing {len(all_chunks)} total chunks with {actual_workers} concurrent workers")
             
-            async def process_chunk(video_id, chunk_text, chunk_idx, total_chunks, video):
+            async def process_chunk(video_id, chunked_text, chunk_idx, total_chunks, video):
                 async with semaphore:
                     # Add a small delay to avoid overwhelming the API
                     await asyncio.sleep(delay * 0.2)
@@ -868,7 +880,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
                             chunk_summary = await asyncio.get_event_loop().run_in_executor(
                                 executor,
                                 lambda: self.summarizer._summarize_chunk(
-                                    chunk_text, 
+                                    chunked_text, 
                                     0, 
                                     3,
                                     video.get('title', ''),
@@ -892,8 +904,8 @@ Create a cohesive, comprehensive summary that combines all these segments."""
             
             # Create and gather all tasks
             tasks = []
-            for video_id, chunk_text, chunk_idx, total_chunks, video in all_chunks:
-                task = process_chunk(video_id, chunk_text, chunk_idx, total_chunks, video)
+            for video_id, chunked_text, chunk_idx, total_chunks, video in all_chunks:
+                task = process_chunk(video_id, chunked_text, chunk_idx, total_chunks, video)
                 tasks.append(task)
                 
             # Wait for all tasks to complete
@@ -1023,7 +1035,7 @@ Create a cohesive, comprehensive summary that combines all these segments."""
         return asyncio.run(process_all_videos())
     
     def export_summaries(self, output_dir=None, organize_by_date=True, limit=None, 
-                          filename_template="{id}_{title}.txt", overwrite=False, query=None):
+                          filename_template="{id}_{title}.md", overwrite=False, query=None):
         """
         Export summaries to text files in an organized directory structure.
         

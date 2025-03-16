@@ -3,66 +3,48 @@ URL: https://www.youtube.com/watch?v=xvO9y8xzbeU
 Upload Date: 2022-03-19
 Video ID: xvO9y8xzbeU
 
-**Comprehensive Summary of the NH House of Representatives Ways and Means Committee Meeting (03/18/22)**
+The New Hampshire House of Representatives meeting on March 18, 2022, centered on the legalization and regulation of cannabis, with discussions spanning multiple bills and key aspects of implementation. Here’s a cohesive summary of the key points across all segments:
 
-The New Hampshire House of Representatives Ways and Means Committee meeting on March 18, 2022, centered on two primary topics: the regulation and taxation of cannabis (House Bill 1237 and House Bill 1598) and adjustments to cigar bar regulations. The discussions were detailed and multifaceted, addressing legal, financial, operational, and social implications of cannabis legalization, as well as the economic impact on cigar bars.
+### **Cannabis Legalization and Regulation**
+The primary focus was on **House Bill 1598**, which outlines the legal framework for cannabis retail sales, taxation, and enforcement. Key discussions included:
 
----
+1. **Revenue and Financial Projections**:
+   - Initial revenue estimates ranged from $40 million to $60 million annually, based on comparisons with states like Washington and Massachusetts. However, the exclusion of edibles (which account for 35-45% of sales in other states) reduced projections by 40%.
+   - In the first year, with three to four stores operational, the state expected $10.5 million in revenue, with $3 million in operational costs, leaving $7.5 million in net revenue. By the third year, with all 10 stores open, revenue was projected to reach full potential.
+   - Startup costs were estimated at $14 million, with initial stores funding the rollout of additional locations.
 
-### **1. Cannabis Legalization and Regulation**
-The bulk of the meeting focused on the legalization, taxation, and regulation of cannabis in New Hampshire. Key aspects of the discussion included:
+2. **Store Operations and Model**:
+   - The New Hampshire Liquor Commission proposed a model with 10 small, strategically placed stores near state borders, resembling jewelry stores in terms of security and product display. These stores would be separate from liquor stores to avoid cross-contamination of consumer bases.
+   - Operational costs per store were estimated at $350,000 annually, with personnel costs starting at $1.6 million and potentially growing to $2 million in the first year.
 
-#### **Legislation and Policy**
-- **House Bill 1237 and House Bill 1598**: These bills aim to legalize and regulate cannabis, with a focus on creating a controlled, state-run system. The committee emphasized the importance of balancing policy goals (e.g., ending arrests for cannabis-related offenses) with financial considerations.
-- **Compromise and Caution**: Representatives stressed the need for compromise to achieve legalization while ensuring public safety, regulatory clarity, and financial benefits for the state.
+3. **Cultivation and Supply Chain**:
+   - The bill initially capped cultivation facilities at 15, but there was discussion about removing this cap to allow market-driven growth. Concerns were raised about the supply chain, particularly the ratio of growers to stores, and the need for tracking systems to ensure product integrity and prevent black market activity.
+   - The potential for multiple harvests per year could provide a windfall for small farms and agricultural businesses. A "negociant" role (similar to a wine negotiator) was proposed to assess product quality, educate growers, and ensure consistency.
 
-#### **Revenue and Financial Projections**
-- **Revenue Estimates**: The committee reviewed financial projections, estimating gross revenue of $250 million from cannabis sales, with net revenue of $50 million after operational costs. Excluding edibles could reduce revenue by 40%.
-- **Phased Implementation**: Initial revenues are projected at $10 million in the first year, scaling up to $30 million by the third year, as stores open incrementally (3-4 per year).
-- **Revenue Allocation**: Funds would first cover operational costs and repay state startup costs within five years. Remaining funds would be allocated as follows:
-  - 50% to offset educational property taxes.
-  - 30% to pay down the New Hampshire Retirement System debt.
-  - 10% to public health programs (capped at $25 million).
-  - 5% each to public safety agencies and behavioral health programs.
+4. **Enforcement and Regulation**:
+   - The Liquor Commission’s Division of Enforcement Licensing would oversee cannabis regulation, establishing a Bureau of Cannabis Control with approximately eight staff members, including investigators and auditors.
+   - Enforcement strategies focused on education, compliance, and preventing youth access, with collaboration between state and local law enforcement agencies.
 
-#### **Operational and Regulatory Framework**
-- **Store Model**: The New Hampshire Liquor Commission (NHLC) proposed a freestanding retail model, with stores strategically placed near borders to attract out-of-state customers. Products would be displayed in cases, similar to jewelry stores.
-- **Cultivation and Licensing**: The bill initially capped cultivator licenses at 15, but the committee debated removing this cap to allow more small farms to participate. Vermont’s tiered licensing system was discussed as a potential model.
-- **Quality Control and Testing**: The committee emphasized the need for consistent quality, mandatory independent lab testing, and indoor cultivation to mitigate environmental risks.
-- **Enforcement**: Additional personnel, including certified police officers with specialized training, would be required. The NHLC would oversee a tracking system to monitor cannabis from cultivation to sale, combating the black market.
+5. **Revenue Allocation**:
+   - Revenue would first cover operational costs, then repay the state for startup expenses within five years. Remaining funds would be allocated as follows:
+     - **50%** to offset the state’s education property tax.
+     - **30%** to pay down the New Hampshire Retirement System debt.
+     - **10%** (capped at $25 million) to fund public health programs, including substance abuse cessation.
+     - **5%** to support public safety agencies, such as police training for drug recognition.
+     - **5%** to behavioral health programs for children.
 
-#### **Product Inclusion and Exclusions**
-- **Edibles and Vaping Products**: There was significant debate over whether to include edibles and vaping products. Excluding them could reduce revenue but might mitigate risks of accessibility and public health concerns.
-- **Manufacturing and Definitions**: Clear definitions and regulations for cannabis products, including manufacturing and testing, were highlighted as essential for safety and consistency.
+6. **Edibles and Product Line**:
+   - The bill excluded edibles, which raised concerns about revenue loss and potential enforcement challenges. There were also discussions about the need for clear definitions and regulations around edibles and vaping products.
 
-#### **Banking and Financial Services**
-- The committee discussed the challenges of banking for state-run cannabis operations, emphasizing the need for protections and clarity to mitigate financial risks.
+### **Other Key Discussions**
+- **Cigar Bar Legislation (House Bill 1537)**: The committee debated adjusting the definition of a cigar bar to include loose tobacco and cigarette sales in meeting the 60% tobacco sales threshold. Some representatives expressed concerns about the need for this change.
+- **House Bill 1288**: This bill focused on updating language and increasing the amount of a non-lapsing revolving fund used for training, which is now entirely funded by agency funds. The committee unanimously passed the bill.
+- **Vermont’s Cannabis Model**: Representative Romney highlighted Vermont’s licensing structure, which includes seven cultivation tiers with varying fees, allows vertical integration, and limits corporate consolidation. Vermont had recently finalized its rules and opened its initial application period.
 
-#### **Opt-Out Clause and Local Control**
-- Towns would have the option to opt out of allowing cannabis operations, a departure from the NHLC’s liquor store model, where towns have no say in placement.
-
----
-
-### **2. Cigar Bar Regulations**
-The committee also addressed adjustments to cigar bar regulations to support businesses affected by the pandemic:
-- **Bill Purpose**: The bill aims to help cigar bars meet the 60% revenue threshold from tobacco sales by including cigarettes and loose tobacco in the calculation.
-- **Debate**: While some representatives viewed the bill as unnecessary, others supported it as a temporary solution to pandemic-induced challenges. The Cigar Association of New Hampshire did not oppose the bill.
-
----
-
-### **3. Agricultural and Economic Impact**
-- **Agricultural Opportunities**: Cannabis legalization was seen as a way to boost New Hampshire’s agricultural sector, allowing small farms to diversify their crops.
-- **Economic Growth**: The NHLC highlighted the potential for cannabis to generate significant revenue, support local businesses, and create jobs.
-
----
-
-### **4. Next Steps and Amendments**
-The committee planned to continue refining the bills, focusing on:
-- Clarifying definitions and regulations for cannabis products.
-- Finalizing amendments related to licensing, revenue distribution, and cultivation caps.
-- Addressing outstanding questions about edibles, enforcement, and public health impacts.
-
----
+### **Social and Policy Considerations**
+- **Youth and Marijuana**: Concerns were raised about the message legalization sends to youth, with some representatives expressing discomfort with encouraging marijuana use among young people.
+- **Compromise and Legalization**: There was a consensus that achieving legalization would require compromise, with a focus on stopping arrests and incarcerations related to marijuana use.
+- **Regulatory Flexibility**: Discussions emphasized the need for regulatory flexibility to allow entrepreneurial spirit and trial and error in the emerging cannabis market.
 
 ### **Conclusion**
-The meeting reflected a cautious yet forward-looking approach to cannabis legalization, balancing public safety, financial benefits, and regulatory clarity. The committee also sought to support cigar bars through targeted regulatory adjustments. Discussions will continue as the bills move through the legislative process, with a focus on ensuring a well-regulated, economically beneficial system for New Hampshire.
+The meeting highlighted the complexities of legalizing cannabis in New Hampshire, including financial projections, operational logistics, enforcement strategies, and legislative adjustments. The discussions underscored the need for a balanced approach that considers revenue generation, public safety, agricultural opportunities, and regulatory clarity. The bills are expected to undergo further refinement as they move through the legislative process.

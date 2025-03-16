@@ -3,45 +3,45 @@ URL: https://www.youtube.com/watch?v=zksa7MzraNo
 Upload Date: 2025-03-10
 Video ID: zksa7MzraNo
 
-The New Hampshire House of Representatives held a series of meetings focused on gaming regulations, revenue distribution, and legislative oversight, with particular attention to **House Bill 728 (HB 728)**, **HB 737**, and **HB 2**. These bills propose significant changes to the state’s charitable gaming industry, including the transition from **Historic Horse Racing (HHR) machines** to **Video Lottery Terminals (VLTs)**, adjustments to revenue sharing, and enhanced local control over gaming establishments. Below is a comprehensive summary of the key discussions and decisions:
+**Comprehensive Summary of NH House of Representatives Ways and Means Committee Meeting (March 10, 2025)**
 
-### **1. Transition from HHR to VLTs**
-- **HB 728** proposes phasing out HHR machines by January 1, 2028, and replacing them with VLTs, which are more cost-effective and secure. The transition would primarily involve software changes, with costs estimated at $3,000 to $4,000 per machine.
-- VLTs are seen as more competitive due to lower operational costs and a broader market of manufacturers, offering better efficiency and revenue potential compared to HHR machines.
+The New Hampshire House of Representatives Ways and Means Committee convened on March 10, 2025, to discuss a series of bills and proposals related to gaming legislation, revenue allocation, and fiscal policy. The meeting focused on the transition from Historic Horse Racing (HHR) to Video Lottery Terminals (VLTs), the impact on charitable gaming, and the broader implications for state revenue and education funding. Below is a cohesive summary of the key discussions and outcomes:
 
-### **2. Revenue Distribution Changes**
-- The bills aim to adjust revenue sharing among operators, charities, and the state. **HB 728** increases the state’s share from 25% to 30% and reduces operators’ share from 75% to 70%. Charities would see their share rise from 8.33% to 10.5%.
-- **HB 2** proposes different tax rates for VLTs, with the governor suggesting a 55-45% split (operator-state) and the Senate proposing a 35% tax rate. Senator Tim Lang recommended a 32.5% tax rate as a compromise.
-- Concerns were raised about potential revenue losses to the **Education Trust Fund (ETF)** due to changes in tax distributions, with debates over shifting funds from the ETF to the **General Fund**.
+### **1. Gaming Legislation and Revenue Allocation**
+- **Transition from HHR to VLTs**: The committee extensively debated **HB 728**, which proposes replacing HHR machines with VLTs, described as "true slot machines." The bill aims to increase state revenue by adjusting the revenue split: operators’ share decreases from 75% to 70%, while the state’s share increases from 25% to 30%. Charities’ share also rises from 8.33% to 10.5%, and the education fund’s share increases from 16.67% to 18%. A three-year transition period (2025-2028) allows facilities to phase out HHR machines and phase in VLTs.
+- **Revenue Projections**: Discussions highlighted the strong performance of new facilities like Nashua, which drew significant initial traffic, particularly from Massachusetts. Revenue estimates were noted to be higher than initially projected, prompting calls for upward revisions.
+- **Problem Gaming Funding**: Concerns were raised about the adequacy of funding for problem gaming services, currently budgeted at $150,000 annually. The bill proposes a more stable revenue stream for these services, though exact funding levels remain under review.
+- **Market Saturation and Machine Capacity**: The market saturation for gaming machines in New Hampshire is estimated at 6,000 machines, with current installations around 3,500. Operators are seen as adept at understanding market capacity and demand.
 
-### **3. Local Control and Opt-Out Provisions**
-- **HB 737** allows localities to opt out of allowing gaming establishments, with amendments reducing the timeframe for non-operation from 10 years to 6 years. The bill passed unanimously and was placed on the consent calendar.
-- Representatives emphasized the importance of local control, ensuring that towns can vote on whether to allow gaming facilities and retain oversight over their operations.
+### **2. Licensing and Local Control**
+- **HB 737 Amendment**: The committee debated an amendment to **HB 737**, which initially proposed extending the time frame for gaming license operations from 4 to 10 years. After extensive discussion, a compromise was reached to reduce the time frame to **6 years**, which garnered unanimous support. The bill was recommended for **consent** as it had no fiscal note and no objections.
+- **Local Control**: The bill includes provisions to prevent towns from reversing their approval of gaming operations for a set period, initially two years, proposed to be extended to four or ten years. This is to protect operator investments, given the lengthy and costly permitting and development processes. Towns must approve any gaming licenses before the Lottery Commission can issue them, ensuring local control remains intact.
 
-### **4. Problem Gambling and Regulatory Capacity**
-- The bills introduce steady funding streams for problem gaming services, addressing concerns about insufficient resources for gambling addiction. However, there were concerns about the state’s capacity to regulate up to 6,000 VLTs, with calls for additional staff and resources to manage the expanding gaming industry.
+### **3. Revenue Splits and Tax Rates**
+- **HB 2 Discussion**: The committee discussed **HB 2**, which involves revenue splits between gaming operators and the state. Different proposals were outlined:  
+  - Current law: 75% to operators, 25% to the state.  
+  - HB 728: 70% to operators, 30% to the state.  
+  - Governor’s proposal: 55% to operators, 45% to the state.  
+  - Senate Bill 83: 60% to operators, 40% to the state.  
+  The discussion highlighted the importance of determining a fair revenue split that benefits both operators and the state.
+- **Tax Rate Debate**: Senator Lang recommended a **32.5% tax rate** on VLTs, splitting the difference between the current 25% HHR rate and the proposed 35% Senate rate. The goal is to balance state revenue with operator profitability, ensuring operators can reinvest in facilities to enhance customer experience and attract visitors from neighboring states.
 
-### **5. Economic and Market Considerations**
-- Discussions highlighted the saturation point for gaming machines in New Hampshire, with an estimated limit of 6,000 machines. Currently, there are around 3,500 machines, leaving room for approximately 2,600 more.
-- The opening of new casinos, such as the one in Nashua, was expected to impact existing facilities like Gate City Casino, reflecting the competitive nature of the gaming industry.
+### **4. Charitable Gaming and Funding**
+- **Charitable Impact**: Former State Representative Pat Abrami testified in support of HB 728, arguing that the current 10-day charity allocation model needs reform. Larger facilities generate significant revenue for fewer charities, leaving smaller charities underserved. He suggested redistributing the wealth to benefit more charities.
+- **Charitable Organizations and Casinos**: The committee debated the number of licensed charitable organizations allowed per game date, with a consensus to recommend two to four organizations. Concerns were raised about the potential impact on charities if the number is reduced.
 
-### **6. Legislative Oversight and Commission Structure**
-- Concerns were raised about the structure of the gaming commission, with suggestions to include legislative oversight or a joint House-Senate committee to ensure transparency and accountability.
-- Licensing fees in New Hampshire are significantly lower than in neighboring states, which was seen as an incentive for operators. Licenses are non-transferable on their own but can be sold as part of a business transaction.
+### **5. Education Trust Fund and General Fund**
+- **Revenue Allocation**: Senator Lang proposed a **25-25-50 split** of VLT revenue: **25% to Education Trust Fund**, **25% to municipalities** (for elderly tax credits), and **50% to the General Fund**. Some members suggested prioritizing **teacher pensions** (currently lacking COLAs) over other allocations like the Department of Safety.
+- **Education Trust Fund (ETF) vs. General Fund**: The governor proposed a 50/50 split, while some representatives suggested a 60/40 split in favor of the ETF to address education funding shortfalls. The committee ultimately decided to recommend maintaining the current distribution.
+- **Tobacco Tax Revenue**: The committee reviewed the governor's proposal to standardize the distribution of tobacco tax revenue to 34% for the ETF and 66% for the General Fund, down from the current 43.82% for the ETF. Concerns were raised about the potential loss of revenue for the ETF, especially with the inclusion of vaping products in the tax base.
 
-### **7. Education Funding and Teacher Pensions**
-- There was a strong push to address disparities in teacher pensions, with suggestions to use surplus gaming revenue to fund cost-of-living adjustments (COLAs) for retired teachers.
-- The governor’s proposal to shift $95 million from the ETF to the General Fund sparked debates about the impact on public education funding, with some advocating for a 60-40 split in favor of the ETF.
+### **6. Legislative Oversight and Consumer Protection**
+- **Legislative Oversight**: There was a push for **legislative oversight** of the gaming commission, possibly through a joint House and Senate committee, to ensure transparency and accountability. Concerns were raised about the current **three-member commission** structure, with suggestions to include legislative members or establish oversight mechanisms.
+- **Consumer Protection**: A minimum average daily aggregate payback rate of 88% for VLTs was mentioned as a consumer protection measure to ensure fair payouts.
 
-### **8. Fiscal Impact and Revenue Projections**
-- The Lottery Director indicated that revenue estimates would likely be revised upward due to recent facility openings and increased demand, suggesting the bills could generate significant additional revenue for the state.
-- Representatives debated the potential economic impact of gaming, with estimates suggesting significant funds could be generated for education and municipal tax relief.
+### **7. Next Steps and Future Considerations**
+- **Public Hearings and Future Meetings**: The committee planned to hold public hearings on new bills in the coming weeks and scheduled work sessions to finalize recommendations. The chair noted that some members would be absent for future meetings, and leadership would be adjusted accordingly.
+- **Future Negotiations**: Members acknowledged that many of these issues would likely be resolved in future negotiations, particularly in committee of conference discussions between the House and Senate.
 
-### **9. Next Steps and Scheduling**
-- The House scheduled upcoming legislative sessions to address key bills, with tentative meeting dates set for **Tuesday the 18th** and **Tuesday the 25th**. The speaker expressed confidence in Jordan’s ability to chair the meeting in their absence.
-
-### **10. Public Testimony and Support**
-- Stakeholders, including the New Hampshire Charitable Gaming Operators Association, supported the bills, viewing them as a natural progression for the industry. Public testimony emphasized the need to modernize the gaming model and ensure fair revenue distribution.
-
-### **Conclusion**
-The New Hampshire House of Representatives’ discussions reflect a cautious yet forward-looking approach to gaming regulation, balancing the interests of operators, local communities, and the state. The proposed bills aim to modernize the charitable gaming industry, increase state and charity revenues, address operational inefficiencies, and ensure robust oversight and support for problem gambling services. The next steps involve finalizing revenue distribution models, enhancing legislative oversight, and addressing the fiscal impact on education and other state programs.
+### **Overall Key Takeaways**
+The meeting underscored the complexities of managing gaming revenues, ensuring fair tax rates, and distributing funds to charities and state programs. The discussions reflected a mix of frustration and cautious optimism as members navigated complex fiscal challenges. The committee’s focus remained on balancing operator investments, local control, and state revenue interests in the context of expanding gaming operations in New Hampshire.

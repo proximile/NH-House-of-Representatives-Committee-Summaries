@@ -161,7 +161,7 @@ def main():
     args = parser.parse_args()
     
     # Set up logging
-    from .utils import setup_logging
+    from utils import setup_logging
     
     log_level = logging.DEBUG if args.verbose else logging.INFO
     setup_logging(level=log_level, log_file=args.log_file)
@@ -187,7 +187,7 @@ def main():
         use_whisper = True
         
     # Import main processor here to avoid circular imports
-    from .main import NHVideoProcessor
+    from main import NHVideoProcessor
     
     # Create processor
     processor = NHVideoProcessor(
@@ -203,7 +203,7 @@ def main():
     )
     
     # Import command handlers here
-    from .cli_commands import (
+    from cli_commands import (
         command_fetch, command_transcripts, command_process, command_pipeline,
         command_search, command_info, command_extract, command_convert,
         command_export, command_stats, command_whisper_transcribe, command_whisper_check

@@ -10,7 +10,7 @@ import openai
 import asyncio
 import concurrent.futures
 from typing import List, Dict, Optional, Any
-from .utils import chunk_text
+from utils import chunk_text
 
 logger = logging.getLogger(__name__)
 

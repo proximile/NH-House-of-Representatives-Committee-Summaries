@@ -12,7 +12,7 @@ import time
 import tempfile
 import shutil
 
-from .audio_transcriber import AudioTranscriber
+from audio_transcriber import AudioTranscriber
 
 logger = logging.getLogger(__name__)
 

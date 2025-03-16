@@ -3,34 +3,47 @@ URL: https://www.youtube.com/watch?v=DDJGl7WKxXc
 Upload Date: 2022-03-15
 Video ID: DDJGl7WKxXc
 
-The New Hampshire House of Representatives Ways and Means Committee meeting on March 14, 2022, centered on the legalization and regulation of cannabis, with a focus on both medical and recreational use, revenue implications, and the role of existing medical cannabis providers. The discussions covered several key areas, including licensing, revenue allocation, market structure, and the impact on Alternative Treatment Centers (ATCs). Here is a cohesive summary of the meeting:
+**Comprehensive Summary of the New Hampshire House Ways and Means Committee Meeting on March 14, 2022**
 
-### **1. Medical vs. Recreational Cannabis:**
-- The debate highlighted the distinction between medical and recreational cannabis, particularly concerning the sale of cannabis-infused products (edibles). Some argued that if edibles are restricted for recreational use, they should also be restricted for medical use. Concerns were raised about the viability of ATCs if they are excluded from the recreational market. There was also discussion about recriminalizing possession of edibles for the general population, which could undermine the existing decriminalization framework.
+The New Hampshire House Ways and Means Committee meeting on March 14, 2022, centered on the legalization and regulation of adult-use cannabis, with a particular focus on revenue generation, market structure, and regulatory frameworks. The discussions revolved around several key bills, including **HB 1598**, **HB 237**, and **HB 41**, and addressed a wide range of issues from licensing and fee structures to revenue allocation and market competition. Here are the key themes and takeaways from the meeting:
 
-### **2. Licensing and Regulation:**
-- The committee considered a dual regulatory structure for cannabis sold in state stores, particularly for medical patients. Proposals included allowing ATCs to cultivate, manufacture, and transport cannabis for recreational sales to ensure their viability. The debate also touched on whether to set specific licensing fees in the bill or leave it to agency rulemaking. Comparisons were made to other states, where fees range from $1,000 to $15,000 depending on the license type. The committee estimated potential revenue from licensing fees, which was seen as modest but still a consideration.
+### **1. Revenue Generation and Taxation**
+The Ways and Means Committee’s primary focus was on the potential revenue implications of cannabis legalization. Key points included:
+- **Revenue Projections**: Estimates ranged from $25 million to $50 million annually, though the exclusion of edibles and cartridges—which account for 15-50% of the market in other states—could significantly reduce these figures.
+- **Revenue Allocation**: Proposals included repaying taxpayers for startup costs, funding education property tax relief, contributing to the New Hampshire Retirement System, and supporting health and human services (HHS) programs. A revolving fund was suggested to reinvest profits into opening additional state-run cannabis stores.
+- **Taxation vs. Regulation**: The committee emphasized revenue generation over broader policy issues, acknowledging the need for compromise to ensure the bill’s passage.
 
-### **3. Revenue Allocation and Funding:**
-- Revenue from cannabis sales was a major focus, with proposals to allocate funds for education property tax relief, the New Hampshire Retirement System, and health and human services (HHS) programs, particularly for substance use disorder treatment. There was a suggestion to set aside $25 million for HHS, with strong language to prevent diversion of these funds. The committee debated whether to use fixed dollar amounts or percentage-based allocations to avoid consuming all revenue. The fiscal note estimated a $14 million upfront cost for opening cannabis stores, with suggestions to use a revolving fund to reinvest initial profits.
+### **2. Market Structure and Competition**
+The committee debated the proposed state-controlled model for adult-use cannabis, with the Liquor Commission overseeing retail sales. Key discussions included:
+- **State-Run Stores vs. Alternative Treatment Centers (ATCs)**: Concerns were raised about competition between state-run stores and ATCs, which currently serve the medical cannabis market. ATCs argued that allowing them to participate in the adult-use market would sustain their operations and continue serving medical patients.
+- **Cultivation Limits**: The bill proposed limiting the number of cultivators to 15, with some members suggesting a conservative initial limit and adjusting it later based on market demand. Comparisons were made to neighboring states like Massachusetts and Maine, which have more diverse, free-market systems.
+- **Out-of-State Consumers**: The potential impact of out-of-state consumers, particularly in southern New Hampshire, was considered, as they could drive significant sales.
 
-### **4. Market Structure and Competition:**
-- The bill’s state-run retail model was criticized as less competitive compared to neighboring states like Maine and Massachusetts, which have more open, free-market systems. Concerns were raised that the limited number of cultivators and state-controlled retail could fail to capture the illicit market or provide sufficient consumer choice. The committee discussed the potential impact of out-of-state consumers, particularly in southern New Hampshire, which could significantly increase revenue.
+### **3. Licensing and Fee Structures**
+The absence of a fee schedule in the bill sparked debate:
+- **Registration vs. Licensure**: Confusion arose over the distinction between registration (initial application) and licensure (meeting regulatory requirements).
+- **Fee Flexibility**: Members discussed whether to set fixed fees in statute or allow agencies to determine fees through rulemaking, with a preference for the latter to ensure adaptability.
+- **Revenue from Licensing**: Licensing fees were estimated to generate around $165,000 annually, which was seen as a minor contribution to the overall budget.
 
-### **5. Role of Alternative Treatment Centers (ATCs):**
-- The viability of New Hampshire’s existing ATCs was a recurring concern. The state-controlled model could harm ATCs by creating competition without allowing them to transition to for-profit status or expand their operations. Proposals were made to allow ATCs to participate in the adult-use market to ensure their survival. The importance of maintaining a robust medical cannabis market, which offers untaxed products and serves patients under 21, was emphasized.
+### **4. Regulatory and Implementation Challenges**
+The committee addressed several regulatory and operational hurdles:
+- **Dual Regulatory Structure**: Concerns were raised about the potential complexity of a dual regulatory system if state stores sold both medical and recreational cannabis. Some suggested removing medical cannabis sales from state stores to simplify the structure.
+- **Implementation Timeline**: Estimates suggested it could take up to two years to fully implement the program, with a phased approach proposed to manage startup costs.
+- **Tracking and Monitoring**: The need for a tracking system to monitor cannabis products was discussed, though New Hampshire’s limited market has not yet required one.
 
-### **6. Edibles and Cannabis-Infused Products:**
-- The committee debated whether to allow edibles in state-run stores or restrict them to medical cardholders. There was concern about the potential revenue loss if edibles were not available to all consumers, as they constitute a significant portion of the market. The impact on existing therapeutic cannabis programs was also considered, with a focus on protecting these programs from harm.
+### **5. Medical vs. Adult-Use Markets**
+The viability of the medical cannabis market under the proposed model was a recurring concern:
+- **Edibles and Product Restrictions**: There was debate over whether to allow edibles and other cannabis-infused products for the general population. Restricting these products could negatively impact retailers and state revenue, while also undermining the medical market.
+- **Patient Access**: The importance of maintaining a viable medical market for patients under 21 and those requiring higher-potency products was emphasized. Concerns were raised that the adult-use market could attract medical patients, potentially destabilizing the medical cannabis industry.
 
-### **7. Banking and Financial Services:**
-- The banking language in the bill was considered problematic, and there was a recommendation to remove it. The banking industry indicated they could provide financial services to cannabis-related businesses without state intervention. However, additional language might be needed to provide protections for banks entering this space.
+### **6. Public Opinion and Political Considerations**
+The committee acknowledged strong public support for legalization but recognized that political factors could influence the final outcome. Balancing revenue generation, public health, and regulatory oversight was seen as critical to passing a workable bill.
 
-### **8. Implementation and Regulatory Timelines:**
-- The committee discussed the tight timelines for adopting rules and regulations for cannabis establishments, suggesting extending deadlines to ensure proper rule-making and avoid delays in revenue generation. Clear licensing and registration processes for cultivation, manufacturing, and testing facilities were emphasized, with a focus on aligning rules with legislative intent.
+### **7. Banking and Financial Concerns**
+The banking language in the bill was scrutinized, with recommendations to remove it entirely. Representatives from the New Hampshire Bankers Association suggested adding language to provide additional protections for banks entering the cannabis market.
 
-### **9. Broader Concerns and Compromise:**
-- The committee acknowledged the political challenges of cannabis legalization and the need for compromise to achieve incremental progress. The unprecedented state-controlled model was seen as risky and untested, with potential negative impacts on revenue, consumer choice, and the illicit market. The importance of balancing revenue generation with public health and safety was emphasized.
+### **8. Future Adjustments and Flexibility**
+The committee agreed that while compromises were necessary to pass the current bill, future adjustments could address any shortcomings. Flexibility in regulatory frameworks, fee structures, and market dynamics was emphasized to ensure the industry’s long-term success.
 
-### **Conclusion:**
-The meeting highlighted the complexities of implementing cannabis legalization in New Hampshire, with ongoing debates about regulation, revenue allocation, and the role of existing medical cannabis providers. The committee aimed to finalize the bill in the coming weeks, with further discussions planned to address remaining concerns and ensure a balanced approach that supports both revenue generation and public health.
+### **Conclusion**
+The meeting highlighted the complexities of legalizing and regulating adult-use cannabis in New Hampshire. Balancing revenue generation, regulatory oversight, market viability, and public health concerns requires careful consideration and compromise. The committee’s discussions underscored the need for a flexible, phased approach to implementation, with ongoing adjustments to address emerging challenges and ensure the program’s success.

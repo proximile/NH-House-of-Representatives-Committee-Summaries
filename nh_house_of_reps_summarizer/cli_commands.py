@@ -8,7 +8,7 @@ import sys
 import textwrap
 import logging
 from datetime import datetime
-from .utils import setup_logging, format_duration, format_date, is_transcript_format_supported
+from utils import setup_logging, format_duration, format_date, is_transcript_format_supported
 
 logger = logging.getLogger(__name__)
 
@@ -225,7 +225,7 @@ def command_extract(args, processor):
         
     output_file = args.output
     if not output_file:
-        output_file = f"{args.video_id}_summary.txt"
+        output_file = f"{args.video_id}_summary.md"
         
     try:
         with open(output_file, 'w', encoding='utf-8') as f:

@@ -3,49 +3,42 @@ URL: https://www.youtube.com/watch?v=Y2QYYQaBS2Q
 Upload Date: 2022-03-14
 Video ID: Y2QYYQaBS2Q
 
-The New Hampshire House of Representatives Finance Committee, Division III, held a session on March 14, 2022, to discuss and amend several bills, with a focus on fiscal impacts, public health, and social welfare. The meeting covered a wide range of topics, including healthcare, Medicaid funding, lead testing for children, and abortion regulations. Here’s a comprehensive summary of the key discussions:
+The New Hampshire House of Representatives Finance Committee, Division III, convened on March 14, 2022, to discuss several bills, focusing on healthcare, childcare, and Medicaid funding. The meeting highlighted legislative efforts to address public health, fiscal responsibility, and access to essential services. Here’s a comprehensive summary of the discussions:
 
-### **Healthcare and Medicaid Funding**
-1. **In-and-Out Medical Assistance Program**:
-   - The committee discussed the suspension of funding for the "in and out" program, which assists individuals with fluctuating incomes, particularly those with severe mental illness and other disabilities, in qualifying for Medicaid. The program was expected to be funded in the 2022-2023 biennium but was suspended due to budget concerns.
-   - The state’s share of funding would be approximately $5.37 million, with a federal match bringing the total to around $10.7 million. Most funds would go to community health providers, with at least 85% required for medical services.
-   - A bill to lift the suspension and update income eligibility standards was reviewed. The current threshold ($591/month for a single individual) is outdated, and the bill proposes raising it to $901/month to better reflect today’s economic realities.
+### **Healthcare and Abortion Legislation (HB 1609)**
+The committee debated **HB 1609**, which proposed restrictions on abortions and introduced reporting requirements for procedures after 24 weeks. Key points included:
+- **Exceptions for Fetal Anomalies**: Discussions centered on allowing exceptions for cases where fetal anomalies are incompatible with life, though concerns were raised about the ambiguity of such definitions.
+- **Transparency vs. Medical Practice**: Representative Wolf emphasized the need for transparency and data collection on late-term abortions, while others argued against legislating medical decisions.
+- **Vote Outcome**: The committee voted 4-3 to recommend **Inexpedient to Legislate (ITL)** for HB 1609, signaling opposition to the bill.
 
-2. **Medicaid Program for Severely Mentally Ill**:
-   - There was a discussion about potentially "carving out" funding for severely mentally ill individuals, but this was deemed impractical due to federal Medicaid rules requiring coverage for specific groups (e.g., the blind, disabled, and elderly).
-   - The governor had not included funding for this program in the budget, and there was uncertainty about future prioritization. Representatives hoped the program would be reinstated by July 2023 as originally planned.
+### **Lead Testing in Children (HB 1622 and HB 1642)**
+The committee reviewed two bills aimed at improving lead testing compliance for children entering schools or childcare facilities:
+- **HB 1622**: This bill requires schools and childcare centers to verify lead test results on existing health forms, ensuring children are tested for lead exposure. The fiscal impact was deemed neutral, as the bill leverages existing forms and does not impose new costs.
+- **HB 1642**: Similar to HB 1622, this bill emphasizes reviewing existing health forms for lead test results. Concerns were raised about potential punitive measures, leading to proposed amendments to clarify that lack of testing cannot deny enrollment or continuation in schools or childcare.
+- **Key Focus**: Both bills aim to address low compliance with lead testing, particularly in New Hampshire’s older housing stock, without adding significant burdens.
 
-### **Public Health and Child Welfare**
-1. **Lead Testing in Children (HB 1642)**:
-   - The committee discussed a bill aimed at improving compliance with lead testing for children in schools and childcare centers. While lead testing is already required, compliance rates are low, partly due to the COVID-19 pandemic and other barriers.
-   - The bill seeks to increase awareness and testing rates by integrating it into record-keeping processes without being punitive. Concerns about unfunded mandates for schools were raised, but proponents emphasized the importance of protecting children from lead poisoning, which can cause long-term health and developmental issues.
-   - The committee agreed to work on an amendment to ensure the bill does not deny enrollment or continuation in schools or childcare centers.
+### **Medicaid and Mental Health Funding**
+The committee addressed funding for Medicaid and mental health programs, particularly the "in-and-out" program for individuals with severe mental illness:
+- **Funding Suspension**: The Senate had suspended funding for the program, leaving it without financial backing. The House had intended to maintain the program but had not explicitly secured funding.
+- **Program Impact**: The program serves approximately 6,073 individuals, including 2,500 with severe mental illness. Discussions focused on the financial burden on community health centers and the need for continuity of care.
+- **Federal Matching Funds**: The state receives a 50% federal match for Medicaid expenditures, meaning a $5.37 million state investment would result in $10.7 million in total funding.
+- **In-and-Out Medicaid Eligibility (HB 1526)**: This bill sought to lift the suspension on funding for the in-and-out program, which allows low-income individuals to qualify for Medicaid by documenting medical expenses that reduce their income to the eligibility level. The bill also proposed updating the income threshold, which has not been adjusted in 30 years, to better reflect current living costs.
 
-2. **Healthcare Provider Notifications (HB 1622)**:
-   - This bill, related to healthcare providers notifying patients about no longer accepting new patients and mental health parity, was discussed. Representatives from the Insurance Department and Health and Human Services (HHS) confirmed the bill, as amended, would have no fiscal impact.
-   - The committee decided to recommend the bill for passage (OTP) with the updated fiscal note.
+### **Vaccination Exemptions (HB 1604)**
+The committee discussed **HB 1604**, which deals with exemptions for healthcare workers regarding vaccinations:
+- **Amendment Proposal**: Representative Leah Cushman proposed eliminating the conscientious objector exemption and simplifying the religious exemption process.
+- **Concerns**: There was debate over whether the amendment inadvertently removed the medical exemption and how it aligns with federal CMS guidelines. The committee decided to refine the amendment to ensure compliance with federal law and address fiscal impacts.
 
-### **Abortion Regulations and Vaccine Mandates**
-1. **Abortion Restrictions (HB 1609)**:
-   - The committee debated the fiscal and policy implications of this bill, focusing on abortion regulations after 24 weeks, including exceptions for fetal anomalies incompatible with life. There was significant discussion about the medical and ethical aspects of such cases, with concerns about the clarity of definitions and the role of the legislature in medical decisions.
-   - The committee voted 4-3 to recommend the bill be "Inexpedient to Legislate" (ITL), sending it to the full Finance Committee with that recommendation.
-
-2. **Vaccine Mandate Exemptions (HB 1604)**:
-   - The bill deals with exemptions for healthcare workers regarding vaccine mandates. Representative Leah Cushman introduced an amendment to eliminate the conscientious objector exemption and retain only the religious exemption, simplifying the process.
-   - Concerns were raised about inadvertently removing the medical exemption. The committee discussed aligning the bill with federal CMS (Centers for Medicare & Medicaid Services) guidelines to avoid conflicts and potential loss of federal funding.
-   - The amendment was refined to clarify that medical exemptions would default to CMS rules, and the bill was scheduled for further discussion the following week.
+### **Privacy Impact Assessments (HB 1662)**
+The committee reviewed **HB 1662**, which involves privacy impact assessments for IT systems in the Department of Health and Human Services:
+- **Fiscal Update**: The fiscal note was updated to reflect lower costs due to a corrected labor grade and federal funding assistance.
+- **Amendment**: An amendment clarified that each IT system requires its own privacy impact assessment.
 
 ### **Other Bills**
-1. **Privacy Impact Assessments (HB 1662)**:
-   - The committee reviewed a bill related to privacy impact assessments for IT systems, focusing on clarifying language and adjusting labor grade costs. The bill was postponed for further review the following week.
+- **HB 1608**: Briefly discussed, this bill was considered for return without further action due to its negligible fiscal impact, though some disagreement arose over cost reductions from amendments.
+- **HB 1531**: Deferred due to time constraints.
 
-2. **Repealing Parts of Commissions (HB 1531)**:
-   - The committee discussed a bill involving repealing parts of certain commissions, noting there would be no fiscal impact as responsibilities would be reassigned to existing organizations.
+### **Key Takeaways**
+The meeting underscored the committee’s focus on balancing legislative intent with practical implications, particularly in healthcare and childcare policies. Discussions highlighted the importance of fiscal responsibility, legal compliance, and the need to address public health issues through legislative updates. The committee planned to finalize amendments and revisit the bills the following week.
 
-### **Key Themes**
-1. **Federal Compliance**: The committee emphasized the importance of aligning state laws with federal guidelines, particularly CMS rules, to avoid losing federal funding.
-2. **Policy vs. Fiscal Focus**: Members debated the extent to which the Finance Committee should engage in policy discussions, emphasizing their primary role is to assess fiscal impacts.
-3. **Sensitivity and Compromise**: Discussions on abortion-related bills highlighted the need for sensitivity and compromise, balancing legislative agreements with the need for amendments to address concerns.
-
-### **Next Steps**
-The committee planned to revisit several bills the following week after further review and amendments, with a focus on ensuring clarity in legislative language and avoiding unintended financial burdens on the state, schools, or families.
+Overall, the session reflected efforts to improve access to essential services, ensure public health, and manage the state’s financial challenges responsibly.

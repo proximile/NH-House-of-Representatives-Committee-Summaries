@@ -1,8 +1,0 @@
-Title: House Executive Departments and Administration (05/22/23)
-URL: https://www.youtube.com/watch?v=Y305TKMMm6Q
-Upload Date: 2023-05-23
-Video ID: Y305TKMMm6Q
-
-The New Hampshire House Executive Departments and Administration Committee met to discuss two non-germane amendments to Senate bills. Representative Broda introduced the first amendment, which proposed conditional licensure for mental health professionals under Senate Bill 207. This amendment, originally House Bill 428, aimed to address hurdles for mental health professionals and allow them to bill and receive reimbursement for services under supervision. The amendment was supported by the Office of Professional Licensure and Certification (OPLC), which explained it aligns with state and national trends and compacts. The committee discussed its readiness to move forward with this amendment, given the prior work on merging mental health boards.
-
-The second amendment, introduced by Representative Fitzpatrick, addressed several issues from the original House Bill 655. It focused on separating investigations from adjudication in disciplinary proceedings, clarifying the independence of public board members, redefining the Medical Review Subcommittee, and outlining board member removal criteria. This amendment was drafted by OPLC attorney Douglas Osterhout, who addressed committee questions. The committee closed the public hearing and planned to vote on the amendments during the executive session on Wednesday.

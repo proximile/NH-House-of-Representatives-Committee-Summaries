@@ -90,9 +90,11 @@ def format_date(date_str):
     except:
         return date_str
 
+import math
+
 def chunk_text(text, max_chunk_size, overlap=100):
     """
-    Split text into chunks of max_chunk_size with some overlap.
+    Split text into even chunks with some overlap, ensuring balanced distribution.
     
     Args:
         text (str): Text to split
@@ -102,32 +104,56 @@ def chunk_text(text, max_chunk_size, overlap=100):
     Returns:
         list: List of text chunks
     """
+    import math
+    
+    # If text fits in one chunk, return it as is
     if len(text) <= max_chunk_size:
         return [text]
     
+    total_length = len(text)
+    
+    # Calculate minimum number of chunks needed, considering overlap
+    num_chunks = math.ceil(total_length / (max_chunk_size - overlap))
+    
+    # Calculate the target size for each chunk to ensure even distribution
+    chunk_target_size = math.ceil(total_length / num_chunks) + overlap
+    
+    # Ensure we don't exceed max_chunk_size
+    chunk_target_size = min(chunk_target_size, max_chunk_size)
+    
+    logger.info(f"Splitting text of length {total_length} into approximately {num_chunks} evenly-sized chunks")
+    
     chunks = []
-    start = 0
+    position = 0
     
-    while start < len(text):
-        end = start + max_chunk_size
+    while position < total_length:
+        # Calculate the end position for this chunk
+        chunk_end = min(position + chunk_target_size, total_length)
         
-        if end >= len(text):
-            chunks.append(text[start:])
-            break
+        # If not at the end, try to find a natural break point
+        if chunk_end < total_length:
+            # Look in the last 20% of the chunk for a natural break
+            search_start = max(position, chunk_end - int(chunk_target_size * 0.2))
+            sentence_break = text.rfind('. ', search_start, chunk_end)
+            
+            if sentence_break != -1:
+                chunk_end = sentence_break + 2  # Include the period and space
+            else:
+                # If no sentence break, try to find a space
+                space = text.rfind(' ', search_start, chunk_end)
+                if space != -1:
+                    chunk_end = space + 1  # Include the space
         
-        # Try to find a sentence break
-        sentence_break = text.rfind('. ', start, end)
-        if sentence_break != -1:
-            end = sentence_break + 2  # Include the period and space
-        else:
-            # If no sentence break, try to find a space
-            space = text.rfind(' ', start, end)
-            if space != -1:
-                end = space + 1  # Include the space
+        # Extract the chunk
+        current_chunk = text[position:chunk_end]
+        chunks.append(current_chunk)
+        logger.info(f"Created chunk {len(chunks)} with {len(current_chunk)} characters")
         
-        chunks.append(text[start:end])
-        start = end - overlap  # overlap with previous chunk
+        # Move position for the next chunk, considering overlap
+        # Don't add overlap after the last chunk
+        position = chunk_end - (overlap if chunk_end < total_length else 0)
     
+    logger.info(f"Successfully split into {len(chunks)} chunks of more even size")
     return chunks
 
 def get_temp_file(suffix=None):

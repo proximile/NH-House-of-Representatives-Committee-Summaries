@@ -1,0 +1,35 @@
+Title: House Election Law (01/24/23)
+URL: https://www.youtube.com/watch?v=XVLu9khcPxQ
+Upload Date: 2023-01-24
+Video ID: XVLu9khcPxQ
+
+**Comprehensive Summary of the NH House of Representatives Meeting on Election Laws (01/24/23)**
+
+The New Hampshire House of Representatives convened on January 24, 2023, to discuss several key issues and bills related to election laws, absentee ballots, campaign finance, and election integrity. The meeting was divided into multiple segments, each focusing on specific topics and proposed legislation. Below is a cohesive summary of the discussions and outcomes:
+
+### **Absentee Ballots and Voting Procedures**
+1. **Folding of Ballots**: Representatives addressed issues with folded ballots, particularly in Windham, where folds through voting ovals led to inaccuracies in machine counts. Discussions explored whether standardizing folding equipment or eliminating folds entirely would be more cost-effective and ensure accurate vote counts. Suggestions included using rigid envelopes or mailing tubes to avoid folds.
+2. **Hand Counting vs. Machine Counting**: There was debate over whether folded ballots should be hand-counted to avoid errors. Some argued that hand-counting ensures accuracy but is time-consuming and costly, while others expressed confidence in newer voting machines' ability to handle folded ballots accurately.
+3. **Cost and Logistics of Absentee Ballots**: Concerns were raised about the cost of implementing new envelope systems to prevent folding, including postage costs for larger or rigid envelopes. The potential burden on voters, especially those with disabilities or living overseas, was also discussed.
+4. **Poll Taxes and Accessibility**: Representative Wheeler introduced a bill to eliminate postage costs for absentee ballots, framing it as a modern-day poll tax that hinders voter participation. He argued that voting should be accessible to all, regardless of financial means.
+
+### **Election-Related Bills and Public Hearings**
+1. **House Bill 196**: The public hearing was closed with no opposition, and the committee moved to an executive session.
+2. **House Bill 209**: Introduced by Representative Heidi Hamer, this bill aims to simplify the form required to request an absentee ballot, making it easier for elderly, disabled, and other voters who face challenges voting in person. The bill received support, with discussions on streamlining the process and ensuring it aligns with existing laws.
+3. **House Bills 115, 333, 345, and 350**: These bills were retained for further review. The sponsors requested more time to work on the legislation, gather bipartisan support, or align with pending Senate bills. Ranked-choice voting was a focus in some bills, with sponsors emphasizing its ease of use, constitutionality, and ability to better reflect voter preferences.
+
+### **Campaign Finance and Election Administration**
+1. **House Bill 508**: The discussion centered on issues with mailing ballots and calendars, particularly delays caused by the post office's hand-sorting process for large envelopes. The bill proposed a "plymail" account for the Secretary of State to simplify mailing processes and reduce costs. Additionally, the bill aimed to ensure that town clerks provide stamps for returning ballots, with costs potentially covered by existing federal funds. The bill was praised as a common-sense solution and moved forward for further consideration.
+2. **House Bill 195**: This bill aimed to increase transparency in campaign finance by lowering the threshold for political advocacy organizations to register with the Secretary of State from $5,000 to $2,500. It also expanded the definition of political communication to include mailers, emails, and TV ads within 60 days of an election. The bill sought to close loopholes where groups could avoid disclosure by not using specific "magic words" like "vote for" or "vote against." Concerns were raised about the bill's constitutionality and potential overreach, but proponents argued it would improve transparency and voter awareness.
+3. **House Bill 196**: This bill proposed the creation of a committee (originally a commission) to review and recommend improvements to New Hampshire's campaign finance laws. The committee would study existing laws, consult with stakeholders, and propose legislative changes to enhance transparency and public confidence in the electoral process. The bill received support from the Secretary of State's office and advocates for campaign finance reform.
+
+### **Public Financing for Campaigns and Prohibiting Folded Ballots**
+1. **House Bill 324**: Introduced by Representative Connie Lane on behalf of Representative Muirhead, this bill proposes public financing for campaigns, aiming to reduce the influence of "dark money" and wealthy donors in elections. It seeks to create a voluntary system where candidates can opt into public funding by collecting small donations, allowing them to focus on constituents rather than fundraising. Supporters argued that this would level the playing field for candidates of modest means, reduce the influence of wealthy donors, and increase voter engagement. Concerns were raised about the fiscal impact of the bill, as the fiscal note was not yet available.
+2. **House Bill 453**: Introduced by Representative Christine Perez, this bill would prohibit folded ballots in towns and cities using voting machines. The bill aims to address issues with folded ballots being rejected by machines, causing overvotes or phantom votes. Perez cited the 2020 Windham recount, where folded ballots led to significant discrepancies. Supporters emphasized the importance of election integrity and voter confidence, noting that folded ballots can cause jamming in machines and lead to errors in vote tabulation. Concerns were raised about the cost of larger envelopes and increased postage for absentee ballots, but Perez stressed that the integrity of the vote was paramount.
+
+### **Key Themes and Conclusions**
+1. **Election Integrity**: The overarching theme of the meeting was ensuring election integrity and voter confidence. Representatives emphasized the importance of accurate vote counts and accessible voting processes, with discussions on practical solutions such as reusable mailing tubes and further testing of voting machines to handle folded ballots accurately.
+2. **Campaign Finance Reform**: Several bills aimed to increase transparency and reduce the influence of big money in politics, including proposals for public financing of campaigns and lowering the threshold for political advocacy organizations to register with the Secretary of State.
+3. **Accessibility and Fairness**: Representatives highlighted the need to make voting accessible to all, regardless of financial means or physical ability, with proposals to eliminate postage costs for absentee ballots and simplify the absentee ballot request process.
+
+The meeting concluded with a focus on refining election laws and ensuring bipartisan support for proposed changes, with further discussions and hearings planned for the future.

@@ -1,0 +1,26 @@
+Title: House Health, Human Services and Elderly Affairs (02/15/23)
+URL: https://www.youtube.com/watch?v=NF9fIYJm2p0
+Upload Date: 2023-02-15
+Video ID: NF9fIYJm2p0
+
+The New Hampshire House of Representatives meeting on February 15, 2023, addressed a range of critical healthcare and developmental services issues through discussions on several bills. Key themes included healthcare innovation, access to care, developmental services redesign, and Medicaid expansion. Below is a comprehensive summary of the meeting:
+
+### Healthcare Innovation and Direct-Pay Models
+**House Bill 69 (HB 69)** proposed the introduction of **direct-pay healthcare facilities**, allowing them to operate on membership-based or direct payment models. Proponents argued this could reduce administrative costs, increase price transparency, and offer affordable options for uninsured or high-deductible individuals. Examples of lower costs for procedures like tonsillectomies and gallbladder surgeries were cited. However, critics, including the New Hampshire Hospital Association, raised concerns about **cherry-picking healthier, wealthier patients**, potentially undermining charity care and threatening **critical access hospitals**, which rely heavily on outpatient services. Questions were also raised about compliance with federal laws like the **Emergency Medical Treatment and Labor Act (EMTALA)**. The bill sparked debate between the potential for healthcare innovation and the need to protect vulnerable populations and existing healthcare infrastructure.
+
+### Developmental Services Redesign and Pilot Programs
+**House Bill 608 (HB 608)** proposed a **pilot project** to test changes to the **Bureau of Developmental Services (BDS)** system before full implementation. The redesign aims to address **conflict of interest and direct billing issues** mandated by the **Centers for Medicare & Medicaid Services (CMS)**. While the bill’s sponsor, Representative Edwards, emphasized the need for **transparency and careful testing**, the **Department of Health and Human Services (DHHS)** opposed the bill, fearing it would **halt progress** and jeopardize **$182 million in federal funding**. Stakeholders, including area agencies and families, supported the pilot, citing concerns about rushed implementation, lack of **IT infrastructure**, and potential harm to clients. The discussion highlighted the tension between **urgency to comply with federal mandates** and the need for **thoughtful implementation**.
+
+### Strengthening Developmental Services Oversight
+**House Bill 238 (HB 238)** sought to enhance the role of the **Developmental Disabilities (DD) Quality Council**, ensuring meaningful input and oversight in decisions affecting the DD service system. Stakeholders expressed frustration with the lack of transparency and responsiveness from DHHS. Amendments aimed to strengthen collaboration between the council and DHHS, though concerns were raised about potential conflicts of interest and bureaucratic inefficiency. **House Bill 317 (HB 317)** proposed studying a **two-tiered waiver system** for disability services, but stakeholders were skeptical, fearing reduced services and increased complexity. Both bills emphasized the importance of **stakeholder involvement** and **careful consideration** of policy changes.
+
+### Medicaid Expansion for Immigrants
+**House Bill 282 (HB 282)** aimed to expand Medicaid eligibility for **lawfully residing immigrant children and pregnant women**, waiving the five-year waiting period. Proponents highlighted the **public health and economic benefits**, noting that early healthcare access reduces long-term costs and improves outcomes. Critics, however, expressed concerns about **government dependency** and the **financial burden on taxpayers**. An amendment adjusted the appropriation to $336,000 for an 18-month period, and the bill passed with a vote of **12-8**.
+
+### Other Health-Related Bills
+- **House Bill 500** allowed physicians and **Advanced Practice Registered Nurses (APRNs)** to prescribe controlled drugs via telemedicine, ensuring continuity of care post-COVID-19.
+- **House Bill 611** removed the mandate requiring patients to try opioids or irreversible surgeries before accessing therapeutic cannabis for severe pain.
+- **House Bill 66** proposed a committee to study non-opiate therapies, reflecting a shift toward more inclusive and innovative approaches to pain management.
+
+### Key Takeaways
+The meeting underscored the complexity of healthcare and developmental services reform, with a strong emphasis on balancing **innovation** with **access to care** and **system stability**. Stakeholder involvement, pilot testing, and thoughtful implementation were recurring themes, particularly in discussions about developmental services redesign and direct-pay healthcare models. The debate over Medicaid expansion highlighted the tension between **providing essential healthcare** to vulnerable populations and concerns about **government spending**. Overall, the meeting reflected a commitment to addressing healthcare disparities and improving service delivery while navigating fiscal and regulatory challenges.

@@ -3,56 +3,54 @@ URL: https://www.youtube.com/watch?v=k3_If7yvu38
 Upload Date: 2023-09-22
 Video ID: k3_If7yvu38
 
-**Summary of the NH House of Representatives Meeting on Administrative Rules (09/21/23)**  
+**Comprehensive Summary of the NH House of Representatives Administrative Rules Committee Meeting (09/21/23)**
 
-The New Hampshire House of Representatives convened on September 21, 2023, to address a wide range of administrative rules and legislative updates. The meeting focused on ensuring compliance with statutory requirements, clarifying rulemaking processes, and resolving objections to proposed rules. Below is a comprehensive summary of the key discussions and decisions:  
+The New Hampshire House of Representatives Administrative Rules Committee convened on September 21, 2023, to discuss and review a wide range of administrative rules across various state departments. The meeting emphasized transparency, statutory compliance, and collaboration with relevant boards and agencies. Key discussions and decisions included:
 
-### **Administrative Fines and Rulemaking**  
-1. **Enforcement of Expired Rules**:  
-   - The committee extensively debated the legality of imposing administrative fines under expired rules, referencing a 2015 statute (RSA 541-A) that prohibits enforcing expired rules.  
-   - Concerns were raised about the Department of Environmental Services (DES) issuing fines based on expired rules, using them as guidelines despite statutory prohibitions.  
-   - The agency acknowledged the issue and stated they had ceased issuing fines after a legal challenge, aiming to rectify the problem.  
+### **Procedural Matters**
+- The meeting began with the seating of alternates and motions to approve previous meeting minutes.
+- Several agenda items, including those related to Health and Human Services (HHS) and the Board of Medicine, were postponed to allow for further review or conditional approvals.
 
-2. **Legislative Intent and Authority**:  
-   - Discussions centered on whether the commissioner had the authority to impose fines without specific rules and whether expired rules could still serve as guidance.  
-   - The committee emphasized the need for clarity in rulemaking, particularly regarding the imposition of fines and the inclusion of mitigating factors.  
+### **Consent Agenda**
+- The committee addressed a late-filed conditional approval related to Employment Security, which required a waiver. The consent agenda was approved with amendments.
 
-3. **Postponement of Rule Approval**:  
-   - Due to unresolved issues and the need for further clarification, the committee postponed the approval of certain rules until the next meeting in October. This delay would allow agencies to address concerns and provide additional information on fine determination and imposition.  
+### **Board of Medicine Rules**
+- Detailed discussions were held regarding physician assistant rules, focusing on supervision requirements, fee discrepancies, and application forms. The committee sought clarification from the Office of Professional Licensure and Certification (OPLC) on conflicting fee structures and statutory requirements.
 
-### **Rule Changes and Objections**  
-1. **HB 358 and Administrative Forms**:  
-   - The committee reviewed updates to administrative rule forms necessitated by HB 358, which amended RSA 541-A. The forms were revised to comply with new requirements, including the submission of agency forms and clarification on whether proposed rules implement a state statute for the first time.  
+### **Pease Development Authority (PDA) Rules**
+- The committee reviewed PDA rules concerning state-owned commercial piers and associated facilities. Discrepancies between rule text and forms were noted, and the agency agreed to make recommended changes.
 
-2. **Health and Human Services (HHS) Rules**:  
-   - The committee addressed preliminary objections from the Department of Health and Human Services regarding foster family care licensing requirements. The objections stemmed from clarity issues and enforceability concerns in light of new legislation (HB 48).  
-   - The committee agreed to issue a revised objection to allow the department to make necessary corrections.  
+### **Health and Human Services (HHS) Rules**
+- Rules related to family-centered early supports and services were reviewed, with particular attention to issues with waiver forms and ensuring consistency between rule text and forms.
 
-3. **Family-Centered Early Supports and Services**:  
-   - The committee reviewed rules for family-centered early supports and services, focusing on discrepancies between rule text and waiver forms. The agency committed to revising the form to resolve conflicts.  
+### **Fish and Game Rules**
+- New rules prohibiting interference with hunting, trapping, or fishing were discussed. The agency explained the delay in adopting these rules since the statute was enacted in 1989 and amended in 2016.
 
-### **Board and Agency Rules**  
-1. **Board of Medicine**:  
-   - The committee reviewed rules related to physician assistants, including application and renewal forms, fees, and supervision requirements. Discrepancies between rule text and forms prompted the committee to seek clarification from the agency.  
+### **Interim Rules by OPLC**
+- The OPLC presented interim rules for license endorsement, focusing on streamlining requirements for certain professions. Public comments raised concerns about educational requirements and reciprocity agreements. The committee emphasized the need for transparency and cooperation with boards during the rulemaking process.
 
-2. **Pease Development Authority**:  
-   - The committee addressed discrepancies between rule text and forms related to state-owned commercial piers and associated facilities. The agency agreed to make necessary changes.  
+### **Environmental Fines**
+- Rules establishing fines for hazardous waste management violations were discussed. The Department of Environmental Services (DES) acknowledged past enforcement of expired rules and committed to fixing the issue by promulgating new rules.
 
-3. **Fish and Game Rules**:  
-   - New rules prohibiting interference with hunting, trapping, or fishing were discussed. These rules were long overdue, as the enabling statute was enacted in 1989. The agency explained the delay and the need for the rules.  
+### **Administrative Fines and Expired Rules**
+- The committee discussed a motion to dismiss a case based on expired administrative rules regarding fines. The motion was granted, and the practice of enforcing expired rules was halted.
+- A statute passed in 2015 prohibits the enforcement of expired rules, but the department continued to impose fines between 2015 and 2020, using expired rules as guidance. This practice was challenged in court, leading to the dismissal of cases based on expired rules.
+- The committee debated whether the commissioner had the authority to impose fines without a valid schedule of fines. Further discussion on the issue was postponed to the next meeting, with a request for more information on how fines are determined and applied.
 
-4. **OPLC Interim Rules**:  
-   - The committee reviewed interim rules for licensing by endorsement, focusing on the appendix and statutory references. A debate ensued on whether to include certain statutory requirements in the appendix, with the agency expressing concerns about overstepping board authority.  
+### **Foster Family Care Licensing Requirements**
+- The committee reviewed an objection response from DHHS regarding foster family care licensing requirements. The objection was based on three points: clarity of when an application is considered complete, protection of health care information, and the enforceability of certain rules due to a new law (HB 48).
+- DHHS addressed the first two points by clarifying language in the rules. The third point, related to vaccination requirements for caregivers, was discussed in detail. The committee agreed to revise the objection to specify that only adult caregivers are required to have certain vaccinations, aligning with the new law.
 
-### **Public and Industry Concerns**  
-1. **Electricians' Concerns**:  
-   - A licensed electrician raised concerns about the interim rules, particularly regarding education and experience requirements. The committee discussed the need for better communication and cooperation with the boards to address such issues.  
+### **Approval of Revised Forms**
+- The committee approved three revised forms related to administrative rulemaking, updated to comply with changes from House Bill 358. The forms included a cover sheet for proposed interim rules, a notice for expedited revisions, and a form for agency rulemaking actions.
 
-### **Consent Agenda and Late-Filed Items**  
-- The committee discussed and voted on the consent agenda, including a late-filed conditional approval from Employment Security, which required a waiver.  
+### **Memorandums from Boards**
+- The committee reviewed memos from the Mechanical Licensing Board and the Real Estate Appraiser Board. The Mechanical Licensing Board explained how they assess mental and physical competence of applicants, while the Real Estate Appraiser Board clarified that they continued to collect fees during a period when some rules were expired, as the rule governing fees remained in effect.
 
-### **Next Steps**  
-- The committee scheduled its next meeting for October 19, 2023, to continue discussions on unresolved issues and review additional rule changes.  
+### **Legislative Updates**
+- The committee discussed recent changes to RSA 541a, particularly from House Bill 358, which impacts administrative rulemaking. A memo summarizing these changes was sent to agencies, and committee members requested a copy of the detailed summary.
 
-### **Conclusion**  
-The meeting highlighted the importance of transparency, cooperation with boards, and adherence to statutory requirements in the rulemaking process. The committee emphasized the need for clarity and compliance, particularly in cases involving expired rules and the imposition of fines. The postponement of certain rule approvals underscored the committee’s commitment to addressing unresolved issues thoroughly and ensuring that administrative rules align with legislative intent.
+### **Next Meeting**
+- The committee’s next meeting was scheduled for October 19, 2023, where they will continue discussions on pending issues, including the administrative fines and the revised foster care licensing rules.
+
+The meeting concluded with the committee adjourning after addressing all agenda items, ensuring that all discussed rules and procedures align with statutory requirements and promote transparency and efficiency in administrative rulemaking.

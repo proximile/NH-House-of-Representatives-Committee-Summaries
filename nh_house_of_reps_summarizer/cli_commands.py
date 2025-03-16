@@ -67,21 +67,26 @@ def command_transcripts(args, processor):
         args: Command-line arguments
         processor: NHVideoProcessor instance
     """
+    # Determine which format the user requested (default: 'vtt')
     format_type = args.format.lower() if args.format else 'vtt'
     
-    if not is_transcript_format_supported(f"dummy.{format_type}"):
+    # Directly check that the requested extension is recognized
+    if format_type not in ['vtt', 'srt', 'sbv']:
         print(f"Error: Unsupported transcript format: {format_type}")
         print("Supported formats: vtt, srt, sbv")
         return
     
-    # Set force_whisper in downloader if specified
+    # If user forced Whisper, set that on the processor's downloader
     if hasattr(args, 'force_whisper') and args.force_whisper:
         processor.downloader.force_whisper = True
-        print(f"Using Whisper for transcription (forced)")
+        print("Using Whisper for transcription (forced)")
     
+    # Proceed with downloading transcripts for videos in the specified format
+    format_type = args.format.lower() if args.format else 'vtt'
     print(f"Downloading transcripts for videos in {format_type} format...")
     count = processor.download_transcripts(limit=args.limit, format_type=format_type)
     print(f"Downloaded {count} transcripts")
+
 
 def command_process(args, processor):
     """

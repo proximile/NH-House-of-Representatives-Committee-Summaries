@@ -66,48 +66,118 @@ Transcript:
 
 Summarize the above transcript from a NH House of Representatives meeting."""
         
-    def _clean_transcript(self, vtt_path):
+    def _clean_transcript(self, transcript_path):
         """
-        Process a VTT file and extract clean text using webvtt-py.
+        Clean and extract plain text from transcript files of various formats.
         
         Args:
-            vtt_path (str): Path to the VTT file
+            transcript_path (str): Path to the transcript file
             
         Returns:
-            str: Cleaned transcript text
+            str: Plain text extracted from the transcript
         """
-        if not os.path.exists(vtt_path):
-            logger.error(f"Transcript file not found: {vtt_path}")
+        import os
+        import re
+        
+        if not os.path.exists(transcript_path):
+            logger.error(f"Transcript file not found: {transcript_path}")
             return ""
         
+        file_ext = os.path.splitext(transcript_path)[1].lower()
+        
+        # First try using the webvtt-py library which handles multiple formats
         try:
             import webvtt
             
-            # Read captions from the VTT file
-            captions = webvtt.read(vtt_path)
-            
-            # Extract text from each caption
-            transcript_lines = []
-            for caption in captions:
-                # webvtt-py already handles cleaning HTML tags with .text property
-                transcript_lines.append(caption.text)
+            # Try to detect and fix common format issues before parsing
+            with open(transcript_path, 'r', encoding='utf-8') as f:
+                content = f.read()
                 
-            # Join all lines into a single text
-            transcript_text = ' '.join(transcript_lines)
+            # Fix timestamps with comma decimal separators (SRT format in VTT files)
+            if file_ext == '.vtt' and re.search(r'\d\d:\d\d:\d\d,\d\d\d', content):
+                logger.info(f"Fixing comma-separated timestamps in VTT file: {transcript_path}")
+                content = re.sub(r'(\d\d:\d\d:\d\d),(\d\d\d)', r'\1.\2', content)
+                
+                # Create a temporary fixed file
+                temp_path = transcript_path + '.fixed'
+                with open(temp_path, 'w', encoding='utf-8') as f:
+                    f.write(content)
+                
+                # Parse the fixed file
+                try:
+                    if file_ext == '.vtt':
+                        captions = webvtt.read(temp_path)
+                    elif file_ext == '.srt':
+                        captions = webvtt.from_srt(temp_path)
+                    elif file_ext == '.sbv':
+                        captions = webvtt.from_sbv(temp_path)
+                    else:
+                        raise ValueError(f"Unsupported transcript format: {file_ext}")
+                    
+                    # Clean up the temporary file
+                    os.remove(temp_path)
+                except Exception as e:
+                    logger.warning(f"Error parsing fixed file: {e}")
+                    # Clean up the temporary file
+                    if os.path.exists(temp_path):
+                        os.remove(temp_path)
+                    raise
+            else:
+                # Normal parsing without fixing
+                if file_ext == '.vtt':
+                    captions = webvtt.read(transcript_path)
+                elif file_ext == '.srt':
+                    captions = webvtt.from_srt(transcript_path)
+                elif file_ext == '.sbv':
+                    captions = webvtt.from_sbv(transcript_path)
+                else:
+                    raise ValueError(f"Unsupported transcript format: {file_ext}")
             
-            # Clean up common transcript artifacts
-            transcript_text = re.sub(r'\[.*?\]', '', transcript_text)  # Remove things in brackets
-            transcript_text = re.sub(r'\s+', ' ', transcript_text)     # Remove excess whitespace
+            # Extract text from captions
+            text_parts = []
+            for caption in captions:
+                text_parts.append(caption.text)
             
-            # Remove speaker identifiers like "SPEAKER:"
-            transcript_text = re.sub(r'\b[A-Z][A-Z\s]+:\s*', '', transcript_text)
+            clean_text = '\n'.join(text_parts)
             
-            return transcript_text.strip()
+            # Remove HTML tags if present
+            clean_text = re.sub(r'<[^>]+>', ' ', clean_text)
+            
+            # Remove redundant whitespace
+            clean_text = re.sub(r'\s+', ' ', clean_text).strip()
+            
+            logger.info(f"Extracted {len(clean_text)} characters using webvtt-py")
+            return clean_text
             
         except Exception as e:
-            logger.error(f"Error cleaning transcript with webvtt-py: {e}")
-            # Fall back to original method if webvtt-py fails
-            return self._clean_transcript_fallback(vtt_path)
+            logger.error(f"Error cleaning transcript with webvtt-py: {str(e)}")
+            
+            # Fall back to simple regex-based extraction
+            try:
+                logger.info(f"Falling back to regex-based extraction for {transcript_path}")
+                with open(transcript_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                
+                # Remove header (WEBVTT, styling, etc.)
+                if file_ext == '.vtt':
+                    content = re.sub(r'^WEBVTT.*?\n\n', '', content, flags=re.DOTALL)
+                
+                # Remove timestamps and indices
+                if file_ext in ['.vtt', '.srt']:
+                    # This pattern catches both HH:MM:SS.mmm and HH:MM:SS,mmm formats
+                    content = re.sub(r'\d+\n\d\d:\d\d:\d\d[,\.]\d\d\d --> \d\d:\d\d:\d\d[,\.]\d\d\d\n', '\n', content)
+                    content = re.sub(r'\d\d:\d\d:\d\d[,\.]\d\d\d --> \d\d:\d\d:\d\d[,\.]\d\d\d\n', '\n', content)
+                
+                # Clean up the text
+                clean_text = re.sub(r'<[^>]+>', ' ', content)  # Remove HTML tags
+                clean_text = re.sub(r'\s+', ' ', clean_text).strip()  # Normalize whitespace
+                
+                logger.info(f"Extracted {len(clean_text)} characters using regex fallback")
+                return clean_text
+                
+            except Exception as fallback_error:
+                logger.error(f"Fallback extraction also failed: {str(fallback_error)}")
+                return ""
             
     def _clean_transcript_fallback(self, vtt_path):
         """

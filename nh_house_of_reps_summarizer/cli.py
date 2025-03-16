@@ -86,7 +86,7 @@ def main():
     process_parser.add_argument("--limit", type=int, default=5, help="Maximum number of videos to process")
     process_parser.add_argument("--delay", type=int, default=2, help="Delay between API calls in seconds")
     process_parser.add_argument("--flat", action="store_true", help="Use flat directory structure (don't organize by date)")
-    process_parser.add_argument("--filename-template", default="{id}_{title}.txt",
+    process_parser.add_argument("--filename-template", default="{id}_{title}.md",
                              help="Template for filenames (variables: {id}, {title}, {date})")
     process_parser.add_argument("--overwrite", action="store_true", help="Overwrite existing summary files")
     process_parser.add_argument("--async", dest="async_mode", action="store_true", help="Use async mode for processing")
@@ -99,7 +99,7 @@ def main():
     pipeline_parser.add_argument("--format", choices=['vtt', 'srt', 'sbv'], default='vtt',
                                help="Format to download transcripts in (default: vtt)")
     pipeline_parser.add_argument("--flat", action="store_true", help="Use flat directory structure (don't organize by date)")
-    pipeline_parser.add_argument("--filename-template", default="{id}_{title}.txt",
+    pipeline_parser.add_argument("--filename-template", default="{id}_{title}.md",
                              help="Template for filenames (variables: {id}, {title}, {date})")
     pipeline_parser.add_argument("--overwrite", action="store_true", help="Overwrite existing summary files")
     pipeline_parser.add_argument("--async", dest="async_mode", action="store_true", help="Use async mode for processing")

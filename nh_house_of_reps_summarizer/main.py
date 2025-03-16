@@ -110,87 +110,102 @@ class NHVideoProcessor:
     
     def download_transcripts(self, limit=None, format_type='vtt', batch_size=10):
         """
-        Download transcripts for videos in the database.
+        Download transcripts for videos in the database, with Whisper fallback.
         
         Args:
             limit (int, optional): Maximum number of videos to process
-            format_type (str, optional): Transcript format to download ('vtt', 'srt', 'sbv')
-            batch_size (int, optional): Number of transcripts to download in each batch
-            
+            format_type (str, optional): Transcript format ('vtt', 'srt', 'sbv')
+            batch_size (int, optional): Number of transcripts to download per batch
+        
         Returns:
             int: Number of transcripts downloaded
         """
         logger.info(f"Downloading transcripts for videos (limit={limit}, format={format_type})")
-        
-        if not utils.is_transcript_format_supported(f"dummy.{format_type}"):
+
+        # Check format type is supported
+        if format_type.lower() not in ['vtt', 'srt', 'sbv']:
             logger.error(f"Unsupported transcript format: {format_type}")
             return 0
-        
+
+        import sqlite3
         count = 0
-        
+
         try:
-            # First, check if we have any videos in the database
-            import sqlite3
+            # Check if we have any videos in DB
             conn = sqlite3.connect(self.db.db_path)
             cursor = conn.cursor()
-            
             cursor.execute("SELECT COUNT(*) FROM videos")
             video_count = cursor.fetchone()[0]
-            
             if video_count == 0:
                 logger.warning("No videos in database. Run 'nh_house_of_reps_summarizer fetch' first.")
                 conn.close()
                 return 0
-            
-            # Get videos without transcripts
+
+            # Fetch videos lacking transcripts
             query = '''
-            SELECT id FROM videos
-            WHERE transcript_path IS NULL 
-            ORDER BY upload_date DESC
+                SELECT id
+                FROM videos
+                WHERE transcript_path IS NULL
+                ORDER BY upload_date DESC
             '''
-            
             if limit:
                 query += f" LIMIT {limit}"
-                
+
             cursor.execute(query)
             videos = cursor.fetchall()
             conn.close()
-            
+
             if not videos:
                 logger.info("No videos without transcripts found in database")
                 return 0
-            
-            # Process videos in batches
-            video_ids = [vid[0] for vid in videos]
+
+            # Prepare to process in batches
+            video_ids = [row[0] for row in videos]
             total_videos = len(video_ids)
             
+            import time
+            import os
+
+            # Go in chunks of batch_size
             for i in range(0, total_videos, batch_size):
-                batch = video_ids[i:i+batch_size]
-                logger.info(f"Processing transcript download batch {i//batch_size + 1}/{(total_videos-1)//batch_size + 1} ({len(batch)} videos)")
-                
+                batch = video_ids[i : i + batch_size]
+                logger.info(
+                    f"Processing transcript download batch {i//batch_size + 1}/"
+                    f"{(total_videos - 1)//batch_size + 1} ({len(batch)} videos)"
+                )
+
                 for video_id in batch:
                     logger.info(f"Downloading transcript for video: {video_id}")
-                    transcript_path = self.downloader.download_transcript_in_format(video_id, format_type=format_type)
                     
+                    # Use the downloader's method which handles fallback to Whisper
+                    transcript_path = self.downloader.download_transcript_in_format(
+                        video_id, 
+                        format_type=format_type
+                    )
+
+                    # If successful, update the database
                     if transcript_path and os.path.exists(transcript_path):
-                        # Update database with transcript path
                         if self.db.update_transcript_path(video_id, transcript_path):
                             count += 1
-                            logger.info(f"Downloaded transcript for video: {video_id} in {format_type} format")
+                            logger.info(
+                                f"Downloaded transcript for video: {video_id} "
+                                f"in {format_type} format -> {transcript_path}"
+                            )
                         else:
                             logger.warning(f"Failed to update database for video: {video_id}")
                     else:
                         logger.warning(f"Failed to download transcript for video: {video_id}")
-                    
-                    # Be nice to the API
+
+                    # Pause a bit between each video to avoid spamming
                     time.sleep(1)
-                
+
             logger.info(f"Finished downloading transcripts: {count} transcripts downloaded")
             return count
-            
+
         except Exception as e:
             logger.error(f"Error downloading transcripts: {e}")
             return count
+
 
     def process_videos(self, limit=5, delay=2, organize_by_date=True, filename_template="{id}_{title}.md", 
                        overwrite=False, async_mode=False):

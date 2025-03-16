@@ -312,13 +312,35 @@ class VideoDownloader:
         Returns:
             str: Path to the transcript file, or None if transcription failed
         """
+        # First check if we already have a transcript for this video in any format
+        # This prevents redundant transcription attempts
+        for ext in ['vtt', 'srt', 'sbv']:
+            existing_file = os.path.join(self.transcript_dir, f"{video_id}.{ext}")
+            if os.path.exists(existing_file) and os.path.getsize(existing_file) > 0:
+                logger.info(f"Found existing transcript for {video_id} in {ext} format")
+                # If it's not the requested format, convert it
+                if ext != format_type:
+                    return self.convert_transcript_format(existing_file, format_type)
+                return existing_file
+                
+        # Proceed with Whisper transcription if enabled
         if not self.use_whisper_fallback:
             logger.warning("Whisper fallback is disabled")
             return None
             
         logger.info(f"Starting Whisper transcription for video: {video_id}")
         
+        # Check if Whisper dependencies are installed
+        if not hasattr(self, 'transcriber') or not self.transcriber:
+            logger.error("Whisper transcriber not initialized")
+            return None
+            
+        if not hasattr(self.transcriber, 'dependencies_installed') or not self.transcriber.dependencies_installed:
+            logger.error("Whisper dependencies not installed. Run 'whisper check' command for details.")
+            return None
+        
         # Download the video first
+        logger.info(f"Downloading video for Whisper transcription: {video_id}")
         video_path = self.download_video_for_whisper(video_id)
         
         if not video_path:
@@ -326,14 +348,27 @@ class VideoDownloader:
             return None
             
         try:
+            # Check video file size
+            video_size = os.path.getsize(video_path) / (1024 * 1024)  # Size in MB
+            logger.info(f"Downloaded video size: {video_size:.2f} MB")
+            
+            if video_size < 0.1:
+                logger.error(f"Downloaded video file is too small ({video_size:.2f} MB), might be corrupted")
+                return None
+            
             # Transcribe the video
+            logger.info(f"Starting Whisper transcription process for {video_id}")
             transcription = self.transcriber.transcribe_video(video_path, delete_audio=True)
             
             if not transcription:
                 logger.error(f"Whisper transcription failed for video: {video_id}")
                 return None
                 
-            logger.info(f"Successfully transcribed video with Whisper: {video_id}")
+            # Log transcription length as a sanity check
+            logger.info(f"Successfully transcribed video with Whisper: {video_id} (Length: {len(transcription)} characters)")
+            
+            if len(transcription) < 50:
+                logger.warning(f"Transcription is very short ({len(transcription)} chars), might indicate an issue")
             
             # Save the transcription in the desired format
             output_path = os.path.join(self.transcript_dir, f"{video_id}.{format_type}")
@@ -345,10 +380,20 @@ class VideoDownloader:
                 return result_path
             else:
                 logger.error(f"Failed to convert Whisper transcript to {format_type} format")
+                
+                # As a fallback, write the plain text transcript
+                fallback_path = os.path.join(self.transcript_dir, f"{video_id}_whisper.txt")
+                try:
+                    with open(fallback_path, 'w', encoding='utf-8') as f:
+                        f.write(transcription)
+                    logger.info(f"Saved plain text transcript as fallback: {fallback_path}")
+                except Exception as write_error:
+                    logger.error(f"Failed to write fallback transcript: {str(write_error)}")
+                    
                 return None
                 
         except Exception as e:
-            logger.error(f"Error during Whisper transcription for {video_id}: {e}")
+            logger.error(f"Error during Whisper transcription for {video_id}: {str(e)}", exc_info=True)
             return None
         finally:
             # Clean up the video file to save disk space
@@ -391,7 +436,7 @@ class VideoDownloader:
             'outtmpl': os.path.join(self.transcript_dir, '%(id)s'),
             'quiet': True,
         }
-        
+        logger.info(f"Test A")
         try:
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([video_url])
@@ -471,6 +516,8 @@ class VideoDownloader:
         Returns:
             str: Path to the transcript file in the requested format, or None if not available
         """
+        logger.info(f"Getting transcript for {video_id} in {format_type} format")
+        
         # First, try to see if we already have the transcript in the requested format
         target_file = os.path.join(self.transcript_dir, f"{video_id}.{format_type}")
         if os.path.exists(target_file) and self.validate_transcript(target_file):
@@ -485,10 +532,58 @@ class VideoDownloader:
                     return existing_file
                 else:
                     # Convert to the requested format
+                    logger.info(f"Converting existing {ext} transcript to {format_type}")
                     converted_file = self.convert_transcript_format(existing_file, format_type)
                     if converted_file:
                         return converted_file
-                        
-        # If we don't have any transcript, download it in the requested format
-        # This will try YouTube captions first, then fall back to Whisper if enabled
-        return self.download_transcript(video_id, preferred_format=format_type)
+        
+        # Try to download from YouTube first
+        video_url = f"https://www.youtube.com/watch?v={video_id}"
+        logger.info(f"Attempting to download transcript from YouTube for {video_id}")
+        
+        # Try both manual and auto-generated subtitles
+        ydl_opts = {
+            'skip_download': True,
+            'writesubtitles': True,
+            'writeautomaticsub': True,
+            'subtitleslangs': ['en'],
+            'subtitlesformat': format_type,
+            'outtmpl': os.path.join(self.transcript_dir, f"{video_id}"),
+            'quiet': True,
+        }
+        
+        transcript_path = None
+        
+        try:
+            import yt_dlp
+            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                ydl.download([video_url])
+            
+            # Check for different possible filenames after yt-dlp download
+            possible_files = [
+                os.path.join(self.transcript_dir, f"{video_id}.en.{format_type}"),
+                os.path.join(self.transcript_dir, f"{video_id}.en-US.{format_type}"),
+                os.path.join(self.transcript_dir, f"{video_id}.en-GB.{format_type}"),
+                os.path.join(self.transcript_dir, f"{video_id}.en.auto.{format_type}"),
+                os.path.join(self.transcript_dir, f"{video_id}.en-US.auto.{format_type}"),
+                os.path.join(self.transcript_dir, f"{video_id}.en-GB.auto.{format_type}"),
+            ]
+            
+            # Find the first valid transcript file
+            for file in possible_files:
+                if os.path.exists(file) and self.validate_transcript(file):
+                    # Rename to our standard format
+                    os.rename(file, target_file)
+                    transcript_path = target_file
+                    logger.info(f"Successfully downloaded YouTube transcript: {transcript_path}")
+                    break
+                    
+        except Exception as e:
+            logger.warning(f"Error downloading YouTube transcript: {e}")
+        
+        # If YouTube transcript failed, fall back to Whisper if enabled
+        if not transcript_path and (self.use_whisper_fallback or getattr(self, 'force_whisper', False)):
+            logger.info(f"Falling back to Whisper transcription for {video_id}")
+            transcript_path = self.transcribe_with_whisper(video_id, format_type)
+            
+        return transcript_path

@@ -1,0 +1,8 @@
+Title: Capital Budget Overview Committee (05/23/22)
+URL: https://www.youtube.com/watch?v=YyJGxgwu3O0
+Upload Date: 2022-05-23
+Video ID: YyJGxgwu3O0
+
+The New Hampshire House of Representatives Capital Budget Overview Committee meeting on May 23, 2022, began with the approval of the minutes from the March 28, 2022, meeting. The committee then addressed a request from the Department of Administrative Services to transfer $80,968 from a completed capital project (DoIT New Computer Room Fire System) to another capital project (Spalding Roof Replacement) that lacked sufficient funds. Karen Rantamacki, Director of Plant and Property, and Ted Copper, Administrator for the Division of Public Works, presented the request and clarified that the remaining $22,000 would come from the operating budget. The committee approved the transfer unanimously.
+
+Following this, the committee reviewed informational items from various departments, including the Department of Transportation, Environmental Services, Administrative Services, and the University System of New Hampshire. No questions were raised, and the committee moved on to scheduling future meetings. The next meetings were set for September 19, 2022, and November 28, 2022, with the latter likely being the final meeting before the new committee is formed after the general election. The meeting concluded with a motion to adjourn, which was unanimously approved.

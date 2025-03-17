@@ -1,0 +1,27 @@
+Title: House Finance Division I (02/17/23)
+URL: https://www.youtube.com/watch?v=-Ovk1HXkFw4
+Upload Date: 2023-02-17
+Video ID: -Ovk1HXkFw4
+
+The New Hampshire House of Representatives meeting on February 17, 2023, convened by the House Finance Division I, covered a wide range of topics, including community development, IT infrastructure, energy policy, debt management, and financial transparency. Here’s a comprehensive summary of the discussions:
+
+### **Community Development and Block Grants**
+The **Community Development Finance Authority (CDFA)** plays a pivotal role in assessing and addressing community needs across New Hampshire. Using 13 indicators, such as SNAP usage and housing costs, the CDFA helps municipalities prepare for **Community Development Block Grant (CDBG)** applications. Over the past decade, the CDFA has invested significantly in projects like facility improvements at the Boys and Girls Club of Laconia, mental health center consolidations, and cultural venue renovations. The CDBG program, which allocates about $10 million annually, focuses on low- and moderate-income populations and provides technical assistance to municipalities. The CDFA also requested state match funding to continue leveraging federal resources effectively.
+
+### **IT Budget and Cybersecurity**
+The **Department of Information Technology (DoIT)** emphasized the need for continued investment in cybersecurity, cloud-based services, and digital government initiatives. The IT budget has grown due to increased technology density and the centralization of IT expenses, with projected spending of $125 million in 2025. Legislators raised concerns about rising IT costs, the challenges of managing legacy systems, and the need for long-term planning. DoIT also highlighted the importance of appointing a **Chief Privacy Officer** to oversee data privacy across state agencies.
+
+### **Utilities, Energy, and Consumer Advocacy**
+The **Public Utilities Commission (PUC)** regulates electric, gas, water, and sewer utilities, handling rate cases and interim adjustments for events like storms. The **Office of the Consumer Advocate** represents residential utility customers, balancing shareholder and consumer interests, and seeks additional funding to focus on regional electricity matters with **ISO New England**. The **New Hampshire Department of Energy (DOE)**, established in the last budget, unified energy policies and absorbed functions from the PUC and the Office of Strategic Initiatives. The DOE manages programs like **LIHEAP**, weatherization assistance, and pipeline safety, while pursuing federal grants for renewable energy and grid innovation. Challenges include staffing retention, rising energy costs, and navigating regional energy collaborations like the potential Northeast hydrogen hub and offshore wind development.
+
+### **Debt Management and Fiscal Responsibility**
+The state’s debt service for fiscal years 2024 and 2025 is projected at $60 million annually, covering a $1.2 billion debt. New Hampshire maintains a conservative approach to bonding, aiming to limit borrowing to $120 million per biennium. Discussions highlighted the state’s low debt-to-revenue ratio, the importance of maintaining a strong credit rating, and the potential to increase reserves in the **rainy day fund**. The state also manages an **abandoned property program**, which holds $300 million in unclaimed funds and generates interest for the general fund. The Treasury requested $2.6 million to streamline the process of returning abandoned property, improving transparency and customer service.
+
+### **IT Infrastructure and Treasury Operations**
+The state’s IT infrastructure is transitioning from a capital-intensive model to an operating expense approach, increasing operational costs but aiming for long-term balance. The IT department faces a 12% vacancy rate and relies on consultants to fill technical skill gaps. The **State Treasury** proposed splitting its operations into the **Office of Investment and Debt Management** and the **Office of Treasury Operations** to enhance transparency and succession planning. The Treasury is also migrating its IT services to DoIT to improve cybersecurity and reduce costs. Additionally, the Treasury oversees the **College Savings Scholarship Program**, which supports higher education initiatives.
+
+### **Legislative Concerns and Future Planning**
+Legislators expressed concerns about continuous increases in IT spending, the challenges of managing old systems, and the impact of federal requirements on state investments. The state plans to issue a **debt affordability study** to outline financial capacity and debt management strategies. Discussions also touched on potential funding options for a proposed $350 million prison, including a mix of borrowing and general funds.
+
+### **Conclusion**
+The meeting underscored the importance of data-driven community development, strategic IT investments, and energy policy unification to address New Hampshire’s evolving needs. Fiscal responsibility, transparency, and effective debt management remain central to the state’s financial planning. Collaboration across agencies and leveraging federal resources were highlighted as key strategies to support economic development, cybersecurity, and energy efficiency while navigating challenges like rising costs and staffing shortages.
